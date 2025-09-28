@@ -27,9 +27,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Machine Learning Engineer at Shanghai AI Lab, specializing in AI and Machine Learning with a focus on Computer Vision, Medical Imaging, AI for Healthcare, and Generative AI. I completed my MRes (Master of Research) in Artificial Intelligence and Machine Learning at Imperial College London with Distinction (First-Class Honours), supervised by [**Dr. Matthieu Komorowski**](https://www.linkedin.com/in/matthieukomorowski/) and [**Dr. Guang Yang**](https://www.linkedin.com/in/gyangmedia/).
+I am a Machine Learning Engineer at Shanghai AI Lab, specializing in AI and Machine Learning with a focus on Computer Vision, Medical
+Imaging, AI for Healthcare, and Generative AI. I completed my MRes (Master of Research) in Artificial Intelligence and Machine Learning at
+Imperial College London with Distinction (First-Class Honours), supervised by [**Dr. Matthieu Komorowski**](https://www.linkedin.com/in/matthieukomorowski/) and [**Dr. Guang Yang**](https://www.linkedin.com/in/gyangmedia/).
 
-My educational background includes a Bachelor of Science (Honours) in Data Science from The University of Sydney (Overall WAM 89.5 with University Medal), a Bachelor of Science in Mathematics and Statistics from The University of Melbourne, and a concurrent diploma in Computing.
+My educational background includes a Bachelor of Science (Honours) in Data Science from The University of Sydney (Overall WAM 89.5 with
+University Medal), a Bachelor of Science in Mathematics and Statistics from The University of Melbourne, and a concurrent diploma in Computing.
 
 My current research focuses on applying advanced AI techniques, including:
 - **Deep Generative Models** for **Medical Image Analysis**
@@ -42,4 +45,4 @@ My current research focuses on applying advanced AI techniques, including:
 
 Feel free to contact me for research opportunities and collaboration.
 
-*"Positivity is the essence of progress. In every challenge, I see an opportunity for learning and growth."*
+_"Positivity is the essence of progress. In every challenge, I see an opportunity for learning and growth."_
