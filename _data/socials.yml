@@ -3,11 +3,11 @@
 
 email: ningjunzhi85@gmail.com # primary email address
 linkedin_username: junzhin # LinkedIn username from https://www.linkedin.com/in/junzhin/
-scholar_userid: qc6CJjYAAAAJ # Google Scholar ID
+# scholar_userid: qc6CJjYAAAAJ # Google Scholar ID - temporarily disabled
 semanticscholar_id: 2353285720 # Semantic Scholar ID from https://www.semanticscholar.org/author/Junzhi-Ning/2353285720
 
 # OpenReview profile as custom link
 openreview_profile:
-  logo: https://openreview.net/images/openreview_logo.png
+  logo: data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='8' y='12' font-family='Arial,sans-serif' font-size='8' font-weight='bold' text-anchor='middle' fill='%23666'%3EOR%3C/text%3E%3C/svg%3E
   title: OpenReview
   url: https://openreview.net/profile?id=%7EJunzhi_Ning1
