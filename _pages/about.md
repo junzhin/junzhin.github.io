@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: MRes in Machine Learning, Imperial College London
+subtitle: Machine Learning Engineer at Shanghai AI Lab
 
 profile:
   align: right
   image: optimized_solution.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Research Assistant</p>
+    <p>Machine Learning Engineer</p>
     <p>Shanghai AI Lab, Shanghai, China</p>
-    <p>Previously at Imperial College London</p>
+    <p>MRes Graduate from Imperial College London</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,19 +22,23 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an MRes (Master of Research) student in Machine Learning at Imperial College London, supervised by [**Dr. Matthieu Komorowski**](https://www.linkedin.com/in/matthieukomorowski/) and [**Dr. Guang Yang**](https://www.linkedin.com/in/gyangmedia/). I obtained my B.Sci. degree in Statistics with a minor in Computing from The University of Melbourne and an Honours degree in Data Science from The University of Sydney.
+I am a Machine Learning Engineer at Shanghai AI Lab, specializing in AI and Machine Learning with a focus on Computer Vision, Medical Imaging, AI for Healthcare, and Generative AI. I completed my MRes (Master of Research) in Artificial Intelligence and Machine Learning at Imperial College London with Distinction (First-Class Honours), supervised by [**Dr. Matthieu Komorowski**](https://www.linkedin.com/in/matthieukomorowski/) and [**Dr. Guang Yang**](https://www.linkedin.com/in/gyangmedia/).
+
+My educational background includes a Bachelor of Science (Honours) in Data Science from The University of Sydney (Overall WAM 89.5 with University Medal), a Bachelor of Science in Mathematics and Statistics from The University of Melbourne, and a concurrent diploma in Computing.
 
 My current research focuses on applying advanced AI techniques, including:
-- **GANs** and **Diffusion Generative models**, to **medical imaging**
-- **Medical data Synthesis**
-- **CXR image translation and Computer-aid Medical Image Analysis**
+- **Deep Generative Models** for **Medical Image Analysis**
+- **Chest X-ray Image Translation** and **Lung Opacity Removal**
+- **Multimodal AI Models** for **Medical Applications**
+- **Large-scale Data Generation** and **Synthetic Dataset Creation**
+- **Vision-Language Models** in **Healthcare**
 
-**I am actively seeking PhD and RA opportunities.**
+**I am actively seeking PhD positions for Fall 2025 and Spring 2026, as well as research internship opportunities.**
 
 Feel free to contact me for research opportunities and collaboration.
 
