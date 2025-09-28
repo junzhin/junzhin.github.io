@@ -34,9 +34,11 @@ latest_posts:
 
 I am a Machine Learning Engineer at Shanghai AI Lab, where I conduct cutting-edge research on multimodal AI models with a focus on medical applications. Currently supervised by **Dr. Junjun He**, my work centers on developing advanced AI systems that bridge the gap between computer vision and healthcare applications.
 
-At Shanghai AI Lab, I design and optimize large-scale data generation workflows to create synthetic datasets for training AI models with millions of samples. One of my flagship projects is **RetinaLogos**, where I developed a text-guided retinal image generation model that produces high-resolution color fundus photography (CFP) images with precise anatomical details for downstream medical applications.
+At Shanghai AI Lab, I conduct research on multimodal models with applications in general medical scenarios, focusing on designing workflows for large-scale data generation to create synthetic datasets with millions of samples. I have led the development of **RetinaLogos**, a groundbreaking text-guided retinal image generation model that synthesizes high-resolution color fundus photography (CFP) images with precise anatomical details. Additionally, I contribute to **Project Imaging-X**, a strategic initiative consolidating 1000+ open medical imaging datasets worldwide to build foundational infrastructure for next-generation medical AI models.
 
-Previously, I completed my MRes (Master of Research) in Artificial Intelligence and Machine Learning at Imperial College London with Distinction (First-Class Honours), supervised by [**Dr. Matthieu Komorowski**](https://www.linkedin.com/in/matthieukomorowski/) and [**Dr. Guang Yang**](https://www.linkedin.com/in/gyangmedia/). My educational background includes a Bachelor of Science (Honours) in Data Science from The University of Sydney (Overall WAM 89.5 with University Medal) and a Bachelor of Science in Mathematics and Statistics from The University of Melbourne.
+During my time as a Graduate Research Student at Imperial College London (Oct 2023 - Oct 2024), I actively engaged in lab activities including hosting Journal Clubs and collaborating closely with medical and ICU clinicians. I participated in multiple research projects, managed paper submission workflows for top conferences like MICCAI, and contributed to securing industrial funding for innovative research proposals. I completed my MRes with Distinction (First-Class Honours) and achieved **Top 5 ranking** among the entire MRes in AI and ML cohort, supervised by [**Dr. Matthieu Komorowski**](https://www.linkedin.com/in/matthieukomorowski/) and [**Dr. Guang Yang**](https://www.linkedin.com/in/gyangmedia/).
+
+My educational background includes a Bachelor of Science (Honours) in Data Science from The University of Sydney (Overall WAM 89.5 with **University Medal**) and a Bachelor of Science in Mathematics and Statistics from The University of Melbourne (First-Class Honours).
 
 My current research focuses on advancing **Generative AI** for healthcare applications, with specific achievements in:
 
@@ -46,7 +48,13 @@ My current research focuses on advancing **Generative AI** for healthcare applic
 - **Deep Generative Models**: Advancing medical image translation, particularly in chest X-ray opacity removal and anatomical structure enhancement
 - **Synthetic Dataset Creation**: Designing scalable workflows for generating millions of high-quality medical training samples
 
-My research has resulted in publications at top-tier conferences including **NeurIPS**, **MICCAI**, **ISBI**, and **Pattern Recognition Letters**. I have contributed to multiple breakthrough projects that advance the state-of-the-art in medical AI, including the development of the largest synthetic retinal image dataset (1.4M images) and novel reinforcement learning approaches for medical reasoning.
+My research has resulted in publications at top-tier venues including **MICCAI 2025** (4 accepted papers, including 1 oral presentation and 1 spotlight), **ISBI 2025**, **WACV 2025**, **IJCAI 2025**, **Pattern Recognition Letters**, and **NeurIPS Workshop**. I have submissions under review at **AAAI 2026** and **IEEE TPAMI**. Key achievements include developing the largest synthetic retinal image dataset (RetinaLogos-1400k with 1.4M images), contributing to Project Imaging-X consolidating 1000+ medical datasets, and advancing reinforcement learning approaches for medical reasoning.
+
+**Awards and Recognition:**
+- **Top 5 Master Research Project** among entire MRes in AI and ML cohort, Imperial College London (2024)
+- **University Medal** in Bachelor of Science (Honours), University of Sydney (2023)
+- **Melbourne International Undergraduate Scholarship**, University of Melbourne (2022)
+- **Dean's Honours List**, University of Melbourne (2019)
 
 **I am actively seeking PhD positions for Fall 2025 and Spring 2026, as well as research internship opportunities.**
 
