@@ -8,6 +8,6 @@ semanticscholar_id: 2353285720 # Semantic Scholar ID from https://www.semanticsc
 
 # OpenReview profile as custom link
 openreview_profile:
-  logo: data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='8' y='12' font-family='Arial,sans-serif' font-size='8' font-weight='bold' text-anchor='middle' fill='%23666'%3EOR%3C/text%3E%3C/svg%3E
+  logo: assets/img/openreview.jpeg
   title: OpenReview
   url: https://openreview.net/profile?id=%7EJunzhi_Ning1

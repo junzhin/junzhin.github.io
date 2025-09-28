@@ -2,7 +2,7 @@
 layout: about
 title: "About"
 permalink: /
-subtitle: "Machine Learning Engineer at Shanghai AI Lab"
+subtitle: "Machine Learning Researcher at Shanghai AI Lab"
 author_profile: true
 redirect_from:
   - /about/
@@ -13,7 +13,7 @@ profile:
   image: optimized_solution.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Machine Learning Engineer</p>
+    <p>Machine Learning Researcher</p>
     <p>Shanghai AI Lab, Shanghai, China</p>
     <p>Supervised by Dr. Junjun He</p>
     <p>MRes Graduate from Imperial College London</p>
@@ -32,7 +32,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Machine Learning Engineer at Shanghai AI Lab, where I conduct cutting-edge research on multimodal AI models with a focus on medical applications. Currently supervised by **Dr. Junjun He**, my work centers on developing advanced AI systems that bridge the gap between computer vision and healthcare applications.
+I am a Machine Learning Researcher at Shanghai AI Lab, where I conduct cutting-edge research on multimodal AI models with a focus on medical applications. Currently supervised by **Dr. Junjun He**, my work centers on developing advanced AI systems that bridge the gap between computer vision and healthcare applications.
 
 At Shanghai AI Lab, I conduct research on multimodal models with applications in general medical scenarios, focusing on designing workflows for large-scale data generation to create synthetic datasets with millions of samples. I have led the development of **RetinaLogos**, a groundbreaking text-guided retinal image generation model that synthesizes high-resolution color fundus photography (CFP) images with precise anatomical details. Additionally, I contribute to **Project Imaging-X**, a strategic initiative consolidating 1000+ open medical imaging datasets worldwide to build foundational infrastructure for next-generation medical AI models.
 
