@@ -9,5 +9,5 @@ description: "A growing collection of research projects and portfolio items."
 ---
 
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+{% include archive-single.html %}
 {% endfor %}

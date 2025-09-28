@@ -51,6 +51,7 @@ My current research focuses on advancing **Generative AI** for healthcare applic
 My research has resulted in publications at top-tier venues including **MICCAI 2025** (4 accepted papers, including 1 oral presentation and 1 spotlight), **ISBI 2025**, **WACV 2025**, **IJCAI 2025**, **Pattern Recognition Letters**, and **NeurIPS Workshop**. I have submissions under review at **AAAI 2026**. Key achievements include developing the largest synthetic retinal image dataset (RetinaLogos-1400k with 1.4M images), contributing to Project Imaging-X consolidating 1000+ medical datasets, and advancing reinforcement learning approaches for medical reasoning.
 
 **Awards and Recognition:**
+
 - **Top 5 Master Research Project** among entire MRes in AI and ML cohort, Imperial College London (2024)
 - **University Medal** in Bachelor of Science (Honours), University of Sydney (2023)
 - **Melbourne International Undergraduate Scholarship**, University of Melbourne (2022)
