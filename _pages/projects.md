@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Research projects in medical imaging, computer vision, and AI for healthcare.
+description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [medical-imaging, collaborative]
+display_categories: [work, fun]
 horizontal: false
 ---
 
