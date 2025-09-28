@@ -415,13 +415,6 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/junzhin", "_blank");
         },
       },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
         id: 'social-semanticscholar',
         title: 'Semantic Scholar',
         section: 'Socials',
