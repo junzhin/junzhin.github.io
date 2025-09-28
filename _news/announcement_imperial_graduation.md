@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎓 **Graduated from Imperial College London** with MRes in AI and Machine Learning (Distinction, First-Class Honours)! Achieved **Top 5 ranking** among the entire cohort.
+🎓 **Graduated from Imperial College London** with MRes in AI and Machine Learning (Distinction, First-Class Honours)!
