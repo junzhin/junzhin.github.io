@@ -1,8 +1,12 @@
 ---
 layout: about
-title: about
+title: "About"
 permalink: /
-subtitle: Machine Learning Engineer at Shanghai AI Lab
+subtitle: "Machine Learning Engineer at Shanghai AI Lab"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
 
 profile:
   align: right
