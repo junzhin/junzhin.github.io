@@ -52,7 +52,6 @@ My research has resulted in publications at top-tier venues including **MICCAI 2
 
 **Awards and Recognition:**
 
-- **Top 5 Master Research Project** among entire MRes in AI and ML cohort, Imperial College London (2024)
 - **University Medal** in Bachelor of Science (Honours), University of Sydney (2023)
 - **Melbourne International Undergraduate Scholarship**, University of Melbourne (2022)
 - **Dean's Honours List**, University of Melbourne (2019)

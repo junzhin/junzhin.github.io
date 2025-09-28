@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Released **RetinaLogos-1400k**, the largest synthetic retinal image dataset with 1.4M high-resolution images for ophthalmology AI research. 👁️ Accepted at MICCAI 2025.
+🎉 **RetinaLogos** paper accepted at **MICCAI 2025** as first author! A novel text-guided retinal image synthesis model with fine-grained anatomical control. 👁️
