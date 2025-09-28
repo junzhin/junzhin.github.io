@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Research projects in medical imaging, computer vision, and AI for healthcare.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -409,51 +409,41 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-retinalogos",
+          title: 'RetinaLogos',
+          description: "Fine-Grained Synthesis of High-Resolution Retinal Images Through Captions",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/1_retinalogos/";
+            },},{id: "projects-lung-opacity-removal",
+          title: 'Lung Opacity Removal',
+          description: "Unpaired Translation of Chest X-ray Images for Enhanced Diagnosis",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/2_lung_opacity/";
+            },},{id: "projects-latent-diffusion-for-cxr-classification",
+          title: 'Latent Diffusion for CXR Classification',
+          description: "Unveiling the Capabilities of Latent Diffusion Models for Lung Disease Classification",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/3_latent_diffusion/";
+            },},{id: "projects-deep-generative-models-in-medical-imaging",
+          title: 'Deep Generative Models in Medical Imaging',
+          description: "Vision-Language Conditioning for Medical Pattern Discovery",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/4_dgm_vlc/";
+            },},{id: "projects-night-to-day-image-translation",
+          title: 'Night-to-Day Image Translation',
+          description: "Enhancing Image Translation with Semantic Prior and Reference Guidance",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/5_night2day/";
+            },},{id: "projects-ophora",
+          title: 'Ophora',
+          description: "Large-Scale Data-Driven Text-Guided Ophthalmic Surgical Video Generation",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+              window.location.href = "/projects/6_ophora/";
+            },},{id: "projects-medical-image-grounding",
+          title: 'Medical Image Grounding',
+          description: "Spatial-Semantic Rewarded Group Relative Policy Optimization",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/7_medical_grounding/";
             },},{
         id: 'social-email',
         title: 'email',
