@@ -11,8 +11,6 @@ nav_order: 5
 description: "Curriculum Vitae - Research in Machine Learning and Medical Imaging"
 ---
 
-{% include base_path %}
-
 Education
 ======
 * MRes in Artificial Intelligence and Machine Learning, Imperial College London, 2024
@@ -69,9 +67,7 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+Please see my [Publications page](/publications/) for a complete list of my research publications.
 
 Research Interests
 ======
