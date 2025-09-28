@@ -377,10 +377,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-paper-accepted-at-neurips-workshop-2023-oral-presentation-on-enhancing-night-to-day-image-translation-with-semantic-prior-and-reference-image-guidance-at-the-workshop",
-          title: '🏆 Paper accepted at NeurIPS Workshop 2023! Oral presentation on “Enhancing Night-to-Day Image...',
-          description: "",
-          section: "News",},{id: "news-first-author-paper-accepted-in-pattern-recognition-letters-our-work-on-unpaired-chest-x-ray-translation-for-lung-opacity-diagnosis-has-been-accepted",
+            },},{id: "news-first-author-paper-accepted-in-pattern-recognition-letters-our-work-on-unpaired-chest-x-ray-translation-for-lung-opacity-diagnosis-has-been-accepted",
           title: '📰 First-author paper accepted in Pattern Recognition Letters! Our work on unpaired chest...',
           description: "",
           section: "News",},{id: "news-graduated-from-imperial-college-london-with-mres-in-ai-and-machine-learning-distinction-first-class-honours",
