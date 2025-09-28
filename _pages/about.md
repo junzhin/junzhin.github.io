@@ -38,12 +38,10 @@ Imperial College London with Distinction (First-Class Honours), supervised by [*
 My educational background includes a Bachelor of Science (Honours) in Data Science from The University of Sydney (Overall WAM 89.5 with
 University Medal), a Bachelor of Science in Mathematics and Statistics from The University of Melbourne, and a concurrent diploma in Computing.
 
-My current research focuses on applying advanced AI techniques, including:
-- **Deep Generative Models** for **Medical Image Analysis**
-- **Chest X-ray Image Translation** and **Lung Opacity Removal**
-- **Multimodal AI Models** for **Medical Applications**
-- **Large-scale Data Generation** and **Synthetic Dataset Creation**
-- **Vision-Language Models** in **Healthcare**
+My current research focuses primarily on **Generative AI** and its applications in various domains, with specific emphasis on:
+- **Generative AI** and **Deep Generative Models**
+- **Multimodal AI Systems** and **Vision-Language Models**
+- **Reinforcement Learning** for **AI Reasoning and Decision Making**
 
 **I am actively seeking PhD positions for Fall 2025 and Spring 2026, as well as research internship opportunities.**
 

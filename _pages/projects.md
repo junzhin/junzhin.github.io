@@ -3,7 +3,7 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
-nav: true
+nav: false
 nav_order: 3
 description: "A growing collection of research projects and portfolio items."
 ---

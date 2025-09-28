@@ -3,7 +3,7 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
-nav: true
+nav: false
 nav_order: 2
 description: "Publications by categories in reversed chronological order."
 ---

@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
   - /resume.html
-nav: true
+nav: false
 nav_order: 5
 description: "Curriculum Vitae - Research in Machine Learning and Medical Imaging"
 ---
