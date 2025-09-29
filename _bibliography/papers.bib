@@ -21,7 +21,7 @@
   preview={retina_logos.png},
   selected={true},
   bibtex_show={true},
-  abstract={The scarcity of high-quality, labelled retinal imaging data presents a significant challenge in the development of machine learning models for ophthalmology. To address this, we introduce RetinaLogos-1400k, a large-scale synthetic Caption-CFP dataset with 1.4 million entries.},
+  abstract={The scarcity of high-quality, labelled retinal imaging data, which presents a significant challenge in the development of machine learning models for ophthalmology, hinders progress in the field. Existing methods for synthesising Colour Fundus Photographs (CFPs) largely rely on predefined disease labels, which restricts their ability to generate images that reflect fine-grained anatomical variations, subtle disease stages, and diverse pathological features beyond coarse class categories. To overcome these challenges, we first introduce an innovative pipeline that creates a large-scale, captioned retinal dataset comprising 1.4 million entries, called RetinaLogos-1400k. Specifically, RetinaLogos-1400k uses the visual language model(VLM) to describe retinal conditions and key structures, such as optic disc configuration, vascular distribution, nerve fibre layers, and pathological features. Building on this dataset, we employ a novel three-step training framework, RetinaLogos, which enables fine-grained semantic control over retinal images and accurately captures different stages of disease progression, subtle anatomical variations, and specific lesion types. Through extensive experiments, our method demonstrates superior performance across multiple datasets, with 62.07% of text-driven synthetic CFPs indistinguishable from real ones by ophthalmologists. Moreover, the synthetic data improves accuracy by 5%-10% in diabetic retinopathy grading and glaucoma detection. Codes are available at https://github.com/uni-medical/retina-text2cfp.},
   html={https://anonymous.4open.science/r/Text-Driven-CFP-Generator}
 }
 
@@ -38,7 +38,7 @@
   preview={latent_diffusion_cxr.png},
   selected={true},
   bibtex_show={true},
-  abstract={Diffusion models have demonstrated a remarkable ability to synthesize Chest X-Ray (CXR) images, particularly by generating high-quality samples to address the scarcity and imbalance of annotated CXRs.},
+  abstract={Diffusion models have demonstrated remarkable ability in synthesizing chest X-ray (CXR) images, particularly by generating high-quality samples to address the scarcity and imbalance of annotated CXR datasets. While these models excel in generating realistic samples-suggesting that they contain rich discriminative information effectively harnessing this capability for disease classification and decomposition remains a challenge. This study investigates an approach that leverages latent conditional diffusion models, which are conditioned on corresponding radiology reports, for lung disease classification in CXRs. Specifically, we employ a pre-trained latent conditional diffusion model for CXRs to predict noise estimates for a noisy input lung CXR under various disease conditions. By comparing the noise estimation errors associated with different class prompts, we determine the most probable disease classification based on the minimal error. Through the experiments, we demonstrate that the CXR diffusion-based classifier not only achieves zero-shot classification performance comparable to existing models but also reveals lesion regions aligning with ground truth lesion areas in CXRs.},
   html={https://arxiv.org/abs/2411.XXXXX}
 }
 
@@ -54,8 +54,25 @@
   preview={cxr_lung_opacity.png},
   selected={true},
   bibtex_show={true},
-  abstract={This project addresses the challenge of diagnosing cardiopulmonary diseases in chest X-rays (CXRs) when lung opacities obscure critical anatomical details.},
-  html={https://arxiv.org/abs/2410.XXXXX}
+  abstract={Chest X-ray radiographs (CXRs) play a pivotal role in diagnosing and monitoring cardiopulmonary diseases. However, lung opacities in CXRs frequently obscure anatomical structures, impeding clear identification of lung borders and complicating localisation of pathology. This challenge significantly hampers segmentation accuracy and precise lesion identification, crucial for diagnosis. To tackle these issues, our study proposes an unpaired CXR translation framework that converts CXRs with lung opacities into counterparts without lung opacities while preserving semantic features. Central to our approach is the use of adaptive activation masks to selectively modify opacity regions in lung CXRs. Cross-domain alignment ensures translated CXRs without opacity issues align with feature maps and prediction labels from a pre-trained CXR lesion classifier, facilitating the interpretability of the translation process. We validate our method using RSNA, MIMIC-CXR-JPG and JSRT datasets, demonstrating superior translation quality through lower Fréchet Inception Distance (FID) and Kernel Inception Distance (KID) scores compared to existing methods (FID: 67.18 vs. 210.4, KID: 0.01604 vs. 0.225). Evaluation on RSNA opacity, MIMIC acute respiratory distress syndrome (ARDS) patient CXRs and JSRT CXRs shows our method enhances segmentation accuracy of lung borders and improves lesion classification, further underscoring its potential in clinical settings (RSNA: mIoU: 76.58% vs. 62.58%, Sensitivity: 85.58% vs. 77.03%; MIMIC ARDS: mIoU: 86.20% vs. 72.07%, Sensitivity: 92.68% vs. 86.85%; JSRT: mIoU: 91.08% vs. 85.6%, Sensitivity: 97.62% vs. 95.04%). Our approach advances CXR imaging analysis, especially in investigating segmentation impacts through image translation techniques.},
+  html={https://www.sciencedirect.com/science/article/pii/S0167865525001254}
+}
+
+
+@article{xing2024dgm,
+  abbr        = {Neurips AIM-FM Workshop},
+  title       = {Deep Generative Models Unveil Patterns in Medical Images Through Vision-Language Conditioning},
+  author      = {Xing, Xiaodan and Ning, Junzhi and Nan, Yang and Yang, Guang},
+  journal     = {arXiv preprint},
+  volume      = {abs/2410.13823},
+  year        = {2024},
+  publisher   = {arXiv},
+  preview     = {mask2ct.png},
+  selected    = {true},
+  bibtex_show = {true},
+  abstract    = {Deep generative models have significantly advanced medical imaging analysis by enhancing dataset size and quality. Beyond mere data augmentation, our research in this paper highlights an additional, significant capacity of deep generative models: their ability to reveal and demonstrate patterns in medical images. We employ a generative structure with hybrid conditions, combining clinical data and segmentation masks to guide the image synthesis process. Furthermore, we innovatively transformed the tabular clinical data into textual descriptions. This approach simplifies the handling of missing values and also enables us to leverage large pre-trained vision-language models that investigate the relations between independent clinical entries and comprehend general terms, such as gender and smoking status. Our approach differs from and presents a more challenging task than traditional medical report-guided synthesis due to the less visual correlation of our clinical information with the images. To overcome this, we introduce a text-visual embedding mechanism that strengthens the conditions, ensuring the network effectively utilizes the provided information. Our pipeline is generalizable to both GAN-based and diffusion models. Experiments on chest CT, particularly focusing on the smoking status, demonstrated a consistent intensity shift in the lungs which is in agreement with clinical observations, indicating the effectiveness of our method in capturing and visualizing the impact of specific attributes on medical image patterns. Our methods offer a new avenue for the early detection and precise visualization of complex clinical conditions with deep generative models. All codes are this https URL.  },
+  html        = {https://arxiv.org/abs/2410.13823},
+  code        = {https://github.com/junzhin/DGM-VLC}
 }
 
 @article{ning2023night2day,
@@ -70,7 +87,7 @@
   preview={semantic.png},
   selected={false},
   bibtex_show={true},
-  abstract={This project introduces "RefN2D-Guide GAN," a novel method for improving night-to-day image translation by addressing the challenge of mapping images between domains with varying information richness.},
+  abstract={Current unpaired image-to-image translation models deal with the datasets on unpaired domains effectively but face the challenge of mapping images from domains with scarce information to domains with abundant information due to the degradation of visibility and the loss of semantic information. To improve the quality of night-to-day translation further, we propose a novel image translation method named “RefN2D-Guide GAN” that utilizes reference images to improve the adaptability of the encoder within the generator through the feature matching loss. Moreover, we introduce a segmentation module to assist in preserving the semantic details of the generated images without the need for ground true annotations. The incorporation of the embedding consistency loss differentiates the roles of the encoder and decoder and facilitates the transfer of learned representation to both translation directions. Our experimental results show that our proposed method can effectively enhance the quality of night-to-day image translation on the night training set of the ACDC dataset and achieve higher mIoU on the translated images.},
   html={https://link.springer.com/chapter/10.1007/978-3-031-47843-7_12}
 }
 
@@ -83,7 +100,7 @@
   preview={Cyclic_Vision_LanguageManipulator.png},
   selected={true},
   bibtex_show={true},
-  abstract={A cyclic vision-language adapter approach for generating counterfactual explanations in report generation.},
+  abstract={Despite significant advancements in automated report generation, the opaqueness of text interpretability continues to cast doubt on the reliability of the content produced. This paper introduces a novel approach to identify specific image features in X-ray images that influence the outputs of report generation models. Specifically, we propose Cyclic Vision-Language Manipulator CVLM, a module to generate a manipulated X-ray from an original X-ray and its report from a designated report generator. The essence of CVLM is that cycling manipulated X-rays to the report generator produces altered reports aligned with the alterations pre-injected into the reports for X-ray generation, achieving the term "cyclic manipulation". This process allows direct comparison between original and manipulated X-rays, clarifying the critical image features driving changes in reports and enabling model users to assess the reliability of the generated texts. Empirical evaluations demonstrate that CVLM can identify more precise and reliable features compared to existing explanation methods, significantly enhancing the transparency and applicability of AI-generated reports.},
   url={https://api.semanticscholar.org/CorpusID:273950041}
 }
 
@@ -99,7 +116,7 @@
   preview={DMRN.png},
   selected={true},
   bibtex_show={true},
-  abstract={DMRN introduces a dynamical multiorder response network for robust lung airway segmentation.},
+  abstract={Automated airway segmentation in CT images is crucial for lung diseases' diagnosis. However, manual annotation scarcity hinders supervised learning efficacy, while unlimited intensities and sample imbalance lead to discontinuity and false-negative issues. To address these challenges, we propose a novel airway segmentation model named Dynamical Multi-order Response Network (DMRN), integrating the unsupervised and supervised learning in parallel to alleviate the label scarcity of airway. In the unsupervised branch, (1) we propose several novel strategies of Dynamic Mask-Ratio (DMR) to enable the model to perceive context information of varying sizes, mimicking the laws of human learning vividly; (2) we present a novel target of Multi-Order Normalized Responses (MONR), exploiting the distinct order exponential operation of raw images and oriented gradients to enhance the textural representations of bronchioles. For the supervised branch, we directly predict the final full segmentation map by the large-ratio cube-masked input instead of full input. Ultimately, we verify the method performance and robustness by training on normal lung disease datasets, while testing on lung cancer, COVID-19 and Lung fibrosis datasets. All experimental results have proved that our method exceeds state-of-the-art methods significantly.},
   pdf={https://openaccess.thecvf.com/content/WACV2025/papers/Zhang_DMRN_A_Dynamical_Multi-Order_Response_Network_for_the_Robust_Lung_WACV_2025_paper.pdf}
 }
 
@@ -114,7 +131,7 @@
   preview={the_tree.png},
   selected={false},
   bibtex_show={true},
-  abstract={THE-Tree explores whether tracing historical evolution can enhance scientific verification and reasoning capabilities.},
+  abstract={Large Language Models (LLMs) are accelerating scientific idea generation, but rigorously evaluating these numerous, often superficial, AI-generated propositions for novelty and factual accuracy is a critical bottleneck; manual verification is too slow. Existing validation methods are inadequate: LLMs as standalone verifiers may hallucinate and lack domain knowledge (our findings show 60% unawareness of relevant papers in specific domains), while traditional citation networks lack explicit causality and narrative surveys are unstructured. This underscores a core challenge: the absence of structured, verifiable, and causally-linked historical data of scientific this http URL address this,we introduce \textbf{THE-Tree} (\textbf{T}echnology \textbf{H}istory \textbf{E}volution Tree), a computational framework that constructs such domain-specific evolution trees from scientific literature. THE-Tree employs a search algorithm to explore evolutionary paths. During its node expansion, it utilizes a novel "Think-Verbalize-Cite-Verify" process: an LLM proposes potential advancements and cites supporting literature. Critically, each proposed evolutionary link is then validated for logical coherence and evidential support by a recovered natural language inference mechanism that interrogates the cited literature, ensuring that each step is grounded. We construct and validate 88 THE-Trees across diverse domains and release a benchmark dataset including up to 71k fact verifications covering 27k papers to foster further research. Experiments demonstrate that i) in graph completion, our THE-Tree improves hit@1 by 8% to 14% across multiple models compared to traditional citation networks; ii) for predicting future scientific developments, it improves hit@1 metric by nearly 10%; and iii) when combined with other methods, it boosts the performance of evaluating important scientific papers by almost 100%.},
   html={https://arxiv.org/abs/2506.21763}
 }
 
@@ -129,25 +146,10 @@
   preview={gui_agents.png},
   selected={false},
   bibtex_show={true},
-  abstract={A framework for Kahneman's dual-system intelligence in GUI agents through learning, reasoning, and refinement.},
+  abstract={Graphical User Interface (GUI) agents have made significant progress in automating digital tasks through the utilization of computer vision and language models. Nevertheless, existing agent systems encounter notable limitations. Firstly, they predominantly depend on trial and error decision making rather than progressive reasoning, thereby lacking the capability to learn and adapt from interactive encounters. Secondly, these systems are assessed using overly simplistic single step accuracy metrics, which do not adequately reflect the intricate nature of real world GUI interactions. In this paper, we present CogniGUI, a cognitive framework developed to overcome these limitations by enabling adaptive learning for GUI automation resembling human-like behavior. Inspired by Kahneman's Dual Process Theory, our approach combines two main components: (1) an omni parser engine that conducts immediate hierarchical parsing of GUI elements through quick visual semantic analysis to identify actionable components, and (2) a Group based Relative Policy Optimization (GRPO) grounding agent that assesses multiple interaction paths using a unique relative reward system, promoting minimal and efficient operational routes. This dual-system design facilitates iterative ''exploration learning mastery'' cycles, enabling the agent to enhance its strategies over time based on accumulated experience. Moreover, to assess the generalization and adaptability of agent systems, we introduce ScreenSeek, a comprehensive benchmark that includes multi application navigation, dynamic state transitions, and cross interface coherence, which are often overlooked challenges in current benchmarks. Experimental results demonstrate that CogniGUI surpasses state-of-the-art methods in both the current GUI grounding benchmarks and our newly proposed benchmark.},
   html={https://arxiv.org/abs/2506.17913}
 }
 
-@article{xing2024dgm,
-  abbr={Neurips AIM-FM Workshop},
-  title={Deep Generative Models Unveil Patterns in Medical Images Through Vision-Language Conditioning},
-  author={Xing, Xiaodan and Ning, Junzhi and Nan, Yang and Yang, Guang},
-  journal={arXiv preprint},
-  volume={abs/2410.13823},
-  year={2024},
-  publisher={arXiv},
-  preview={mask2ct.png},
-  selected={true},
-  bibtex_show={true},
-  abstract={This project explores how deep generative models can go beyond traditional data augmentation in medical imaging by uncovering and demonstrating clinical patterns within medical images.},
-  html={http://arxiv.org/abs/2410.13823},
-  code={https://github.com/junzhin/DGM-VLC}
-}
 
 @article{su2025gmai,
   abbr={arXiv},
@@ -161,7 +163,7 @@
   selected={true},
   bibtex_show={true},
   note={Under Review},
-  abstract={Recent advances in general medical AI have made significant strides, but existing models often lack the reasoning capabilities needed for complex medical decision-making. This paper presents GMAI-VL-R1, a multimodal medical reasoning model enhanced by reinforcement learning (RL) to improve its reasoning abilities.},
+  abstract={Recent advances in general medical AI have made significant strides, but existing models often lack the reasoning capabilities needed for complex medical decision-making. This paper presents GMAI-VL-R1, a multimodal medical reasoning model enhanced by reinforcement learning (RL) to improve its reasoning abilities. Through iterative training, GMAI-VL-R1 optimizes decision-making, significantly boosting diagnostic accuracy and clinical support. We also develop a reasoning data synthesis method, generating step-by-step reasoning data via rejection sampling, which further enhances the model's generalization. Experimental results show that after RL training, GMAI-VL-R1 excels in tasks such as medical image diagnosis and visual question answering. While the model demonstrates basic memorization with supervised fine-tuning, RL is crucial for true generalization. Our work establishes new evaluation benchmarks and paves the way for future advancements in medical reasoning models. },
   html={https://arxiv.org/abs/2504.01886}
 }
 
@@ -173,11 +175,11 @@
   booktitle={Medical Image Computing and Computer Assisted Intervention},
   year={2025},
   publisher={Springer},
-  note={MICCAI Oral Presentation},
+  note={Oral Presentation},
   preview={surgical_ophora.png},
   selected={true},
   bibtex_show={true},
-  abstract={Ophora presents a large-scale data-driven approach for text-guided ophthalmic surgical video generation.}
+  abstract={In ophthalmic surgery, developing an AI system capable of interpreting surgical videos and predicting subsequent operations requires numerous ophthalmic surgical videos with high-quality annotations, which are difficult to collect due to privacy concerns and labor consumption. Text-guided video generation (T2V) emerges as a promising solution to overcome this issue by generating ophthalmic surgical videos based on surgeon instructions. In this paper, we present Ophora, a pioneering model that can generate ophthalmic surgical videos following natural language instructions. To construct Ophora, we first propose a Comprehensive Data Curation pipeline to convert narrative ophthalmic surgical videos into a large-scale, high-quality dataset comprising over 160K video-instruction pairs, Ophora-160K. Then, we propose a Progressive Video-Instruction Tuning scheme to transfer rich spatial-temporal knowledge from a T2V model pre-trained on natural video-text datasets for privacy-preserved ophthalmic surgical video generation based on Ophora-160K. Experiments on video quality evaluation via quantitative analysis and ophthalmologist feedback demonstrate that Ophora can generate realistic and reliable ophthalmic surgical videos based on surgeon instructions. We also validate the capability of Ophora for empowering downstream tasks of ophthalmic surgical workflow understanding. Code is available at https://github.com/uni-medical/Ophora.}
 }
 
 @article{xu2025medground,
@@ -188,17 +190,17 @@
   booktitle={Medical Image Computing and Computer Assisted Intervention},
   year={2025},
   publisher={Springer},
-  note={MICCAI Spotlight},
+  note={Spotlight},
   preview={spatial_reward_r1_cxr.png},
   selected={true},
   bibtex_show={true},
-  abstract={This work advances medical image grounding through spatial-semantic rewarded group relative policy optimization.}
+  abstract={Medical Image Grounding (MIG), which involves localizing specific regions in medical images based on textual descriptions, requires models to not only perceive regions but also deduce spatial relationships of these regions. Existing Vision-Language Models (VLMs) for MIG often rely on Supervised Fine-Tuning (SFT) with large amounts of Chain-of-Thought (CoT) reasoning annotations, which are expensive and time-consuming to acquire. Recently, DeepSeek-R1 demonstrated that Large Language Models (LLMs) can acquire reasoning abilities through Group Relative Policy Optimization (GRPO) without requiring CoT annotations. In this paper, we adapt the GRPO reinforcement learning framework to VLMs for Medical Image Grounding. We propose the Spatial-Semantic Rewarded Group Relative Policy Optimization to train the model without CoT reasoning annotations. Specifically, we introduce Spatial-Semantic Rewards, which combine spatial accuracy reward and semantic consistency reward to provide nuanced feedback for both spatially positive and negative completions. Additionally, we propose to use the Chain-of-Box template, which integrates visual information of referring bounding boxes into the reasoning process, enabling the model to explicitly reason about spatial regions during intermediate steps. Experiments on three datasets MS-CXR, ChestX-ray8, and M3D-RefSeg demonstrate that our method achieves state-of-the-art performance in Medical Image Grounding. Ablation studies further validate the effectiveness of each component in our approach.}
 }
 
 @article{multimodal2025miccai,
   abbr={MICCAI},
   title={Multi-modal MRI Translation via Evidential Regression and Distribution Calibration},
-  author={Others and Ning, Junzhi},
+  author={Jiyao Liu, Shangqi Gao, Yuxin Li, Lihao Liu, Xin Gao, Zhaohu Xing, Junzhi Ning, Yanzhou Su, Xiao-Yong Zhang, Junjun He, Ningsheng Xu, Xiahai Zhuang},
   journal={MICCAI},
   booktitle={Medical Image Computing and Computer Assisted Intervention},
   year={2025},
@@ -206,8 +208,8 @@
   preview={multi-model_mri.png},
   selected={true},
   bibtex_show={true},
-  note={MICCAI},
-  abstract={A novel approach for multi-modal MRI translation using evidential regression and distribution calibration.}
+  note={},
+  abstract={Multi-modal Magnetic Resonance Imaging (MRI) translation leverages information from source MRI sequences to generate target modalities, enabling comprehensive diagnosis while overcoming the limitations of acquiring all sequences. While existing deep-learning-based multi-modal MRI translation methods have shown promising potential, they still face two key challenges: 1) lack of reliable uncertainty quantification for synthesized images, and 2) limited robustness when deployed across different medical centers. To address these challenges, we propose a novel framework that reformulates multi-modal MRI translation as a multi-modal evidential regression problem with distribution calibration. Our approach incorporates two key components: 1) an evidential regression module that estimates uncertainties from different source modalities and an explicit distribution mixture strategy for transparent multi-modal fusion, and 2) a distribution calibration mechanism that adapts to source-target mapping shifts to ensure consistent performance across different medical centers. Extensive experiments on three datasets from the BraTS2023 challenge demonstrate that our framework achieves superior performance and robustness across domains.}
 }
 
 @article{ojemb2025anatomy,
@@ -221,7 +223,7 @@
   selected={false},
   bibtex_show={true},
   note={Under Review},
-  abstract={A novel approach for anatomy-guided radiology report generation using pathology-aware regional prompts to improve diagnostic accuracy.}
+  abstract={Radiology reporting generative AI holds significant potential to alleviate clinical workloads and streamline medical care. However, achieving high clinical accuracy is challenging, as radiological images often feature subtle lesions and intricate structures. Existing systems often fall short, largely due to their reliance on fixed size, patch-level image features and insufficient incorporation of pathological information. This can result in the neglect of such subtle patterns and inconsistent descriptions of crucial pathologies. To address these challenges, we propose an innovative approach that leverages pathology-aware regional prompts to explicitly integrate anatomical and pathological information of various scales, significantly enhancing the precision and clinical relevance of generated reports. We develop an anatomical region detector that extracts features from distinct anatomical areas, coupled with a novel multi-label lesion detector that identifies global pathologies. Our approach emulates the diagnostic process of radiologists, producing clinically accurate reports with comprehensive diagnostic capabilities. Experimental results show that our model outperforms previous state-of-the-art methods on most natural language generation and clinical efficacy metrics, with formal expert evaluations affirming its potential to enhance radiology practice.}
 }
 
 @article{ma2025meditok,
@@ -236,7 +238,7 @@
   selected={true},
   bibtex_show={true},
   note={Under Review},
-  abstract={MedITok presents a unified tokenizer for medical image synthesis and interpretation applications.},
+  abstract={Advanced autoregressive models have reshaped multimodal AI. However, their transformative potential in medical imaging remains largely untapped due to the absence of a unified visual tokenizer -- one capable of capturing fine-grained visual structures for faithful image reconstruction and realistic image synthesis, as well as rich semantics for accurate diagnosis and image interpretation. To this end, we present MedITok, the first unified tokenizer tailored for medical images, encoding both low-level structural details and high-level clinical semantics within a unified latent space. To balance these competing objectives, we introduce a novel two-stage training framework: a visual representation alignment stage that cold-starts the tokenizer reconstruction learning with a visual semantic constraint, followed by a textual semantic representation alignment stage that infuses detailed clinical semantics into the latent space. Trained on the meticulously collected large-scale dataset with over 30 million medical images and 2 million image-caption pairs, MedITok achieves state-of-the-art performance on more than 30 datasets across 9 imaging modalities and 4 different tasks. By providing a unified token space for autoregressive modeling, MedITok supports a wide range of tasks in clinical diagnostics and generative healthcare applications. Model and code will be made publicly available at: https://github.com/Masaaki-75/meditok.},
   html={https://arxiv.org/abs/2505.19225}
 }
 
@@ -252,7 +254,7 @@
   selected={true},
   bibtex_show={true},
   note={Under Review},
-  abstract={Intern-S1 presents a scientific multimodal foundation model for various research applications.}
+  abstract={In recent years, a plethora of open-source foundation models have emerged, achieving remarkable progress in some widely attended fields, with performance being quite close to that of closed-source models. However, in high-value but more challenging scientific professional fields, either the fields still rely on expert models, or the progress of general foundation models lags significantly compared to those in popular areas, far from sufficient for transforming scientific research and leaving substantial gap between open-source models and closed-source models in these scientific domains. To mitigate this gap and explore a step further toward Artificial General Intelligence (AGI), we introduce Intern-S1, a specialized generalist equipped with general understanding and reasoning capabilities with expertise to analyze multiple science modal data. Intern-S1 is a multimodal Mixture-of-Experts (MoE) model with 28 billion activated parameters and 241 billion total parameters, continually pre-trained on 5T tokens, including over 2.5T tokens from scientific domains. In the post-training stage, Intern-S1 undergoes offline and then online reinforcement learning (RL) in InternBootCamp, where we propose Mixture-of-Rewards (MoR) to synergize the RL training on more than 1000 tasks simultaneously. Through integrated innovations in algorithms, data, and training systems, Intern-S1 achieved top-tier performance in online RL training. On comprehensive evaluation benchmarks, Intern-S1 demonstrates competitive performance on general reasoning tasks among open-source models and significantly outperforms open-source models in scientific domains, surpassing closed-source state-of-the-art models in professional tasks, such as molecular synthesis planning, reaction condition prediction, predicting thermodynamic stabilities for crystals. }
 }
 
 @article{hu2025survey,
@@ -267,7 +269,7 @@
   selected={true},
   bibtex_show={true},
   note={Under Review},
-  abstract={A comprehensive survey of scientific large language models examining their development from data foundations to advanced agent applications across various scientific domains.},
+  abstract={Scientific Large Language Models (Sci-LLMs) are transforming how knowledge is represented, integrated, and applied in scientific research, yet their progress is shaped by the complex nature of scientific data. This survey presents a comprehensive, data-centric synthesis that reframes the development of Sci-LLMs as a co-evolution between models and their underlying data substrate. We formulate a unified taxonomy of scientific data and a hierarchical model of scientific knowledge, emphasizing the multimodal, cross-scale, and domain-specific challenges that differentiate scientific corpora from general natural language processing datasets. We systematically review recent Sci-LLMs, from general-purpose foundations to specialized models across diverse scientific disciplines, alongside an extensive analysis of over 270 pre-/post-training datasets, showing why Sci-LLMs pose distinct demands -- heterogeneous, multi-scale, uncertainty-laden corpora that require representations preserving domain invariance and enabling cross-modal reasoning. On evaluation, we examine over 190 benchmark datasets and trace a shift from static exams toward process- and discovery-oriented assessments with advanced evaluation protocols. These data-centric analyses highlight persistent issues in scientific data development and discuss emerging solutions involving semi-automated annotation pipelines and expert validation. Finally, we outline a paradigm shift toward closed-loop systems where autonomous agents based on Sci-LLMs actively experiment, validate, and contribute to a living, evolving knowledge base. Collectively, this work provides a roadmap for building trustworthy, continually evolving artificial intelligence (AI) systems that function as a true partner in accelerating scientific discovery.},
   html={https://arxiv.org/abs/2508.21148}
 }
 
