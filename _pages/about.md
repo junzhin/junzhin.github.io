@@ -24,12 +24,12 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 10 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 10 # leave blank to include all the blog posts
 ---
 
 I am a Machine Learning Researcher at Shanghai AI Lab, where I conduct cutting-edge research on multimodal AI models with a focus on medical applications. Currently supervised by **Dr. Junjun He**, my work centers on developing advanced AI systems that bridge the gap between computer vision and healthcare applications.
@@ -48,7 +48,7 @@ My current research focuses on advancing **Generative AI** for healthcare applic
 - **Deep Generative Models**: Contributing to medical image translation, particularly in chest X-ray opacity removal and anatomical structure enhancement
 - **Synthetic Dataset Creation**: Contributing to scalable workflows for generating millions of high-quality medical training samples
 
-I have contributed to publications at top-tier venues including **MICCAI 2025** (4 accepted papers, including 1 oral presentation and 1 spotlight), **ISBI 2025**, **WACV 2025**, **IJCAI 2025**, **Pattern Recognition Letters**, and **NeurIPS Workshop**. I have submissions under review at **AAAI 2026**. Key contributions include participating in the development of the largest synthetic retinal image dataset (RetinaLogos-1400k with 1.4M images), contributing to Project Imaging-X consolidating 1000+ medical datasets, and working on reinforcement learning approaches for medical reasoning.
+I have contributed to publications at top-tier venues including **MICCAI 2025** (4 accepted papers, including 1 oral presentation and 1 spotlight), **ISBI 2025**, **WACV 2025**, **IJCAI 2025**, **Pattern Recognition Letters**, and **NeurIPS Workshop**. Key contributions include participating in the development of the largest synthetic retinal image dataset (RetinaLogos-1400k with 1.4M images), contributing to Project Imaging-X consolidating 1000+ medical datasets, and working on reinforcement learning approaches for medical reasoning.
 
 **Awards and Recognition:**
 
