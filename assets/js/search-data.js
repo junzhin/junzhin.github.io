@@ -377,10 +377,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-first-author-paper-accepted-in-pattern-recognition-letters-our-work-on-unpaired-chest-x-ray-translation-for-lung-opacity-diagnosis-has-been-accepted",
-          title: '📰 First-author paper accepted in Pattern Recognition Letters! Our work on unpaired chest...',
-          description: "",
-          section: "News",},{id: "news-graduated-from-imperial-college-london-with-mres-in-ai-and-machine-learning-distinction-first-class-honours",
+            },},{id: "news-graduated-from-imperial-college-london-with-mres-in-ai-and-machine-learning-distinction-first-class-honours",
           title: '🎓 Graduated from Imperial College London with MRes in AI and Machine Learning...',
           description: "",
           section: "News",},{id: "news-dmrn-paper-accepted-at-wacv-2025-a-dynamical-multi-order-response-network-for-robust-lung-airway-segmentation-in-medical-imaging",
@@ -391,6 +388,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-first-author-paper-accepted-at-isbi-2025-unveiling-the-capabilities-of-latent-diffusion-models-for-classification-of-lung-diseases-in-chest-x-rays-explores-new-frontiers-in-medical-ai",
           title: '🎉 First-author paper accepted at ISBI 2025! “Unveiling the Capabilities of Latent Diffusion...',
+          description: "",
+          section: "News",},{id: "news-first-author-paper-accepted-in-pattern-recognition-letters-our-work-on-unpaired-chest-x-ray-translation-for-lung-opacity-diagnosis-has-been-accepted",
+          title: '📰 First-author paper accepted in Pattern Recognition Letters! Our work on unpaired chest...',
           description: "",
           section: "News",},{id: "news-cyclic-vision-language-manipulator-paper-accepted-at-ijcai-2025-joint-work-on-reliable-image-interpretation-for-automated-report-generation-in-medical-imaging",
           title: '📄 Cyclic Vision-Language Manipulator paper accepted at IJCAI 2025! Joint work on reliable...',
