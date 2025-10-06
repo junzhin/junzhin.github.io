@@ -14,8 +14,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Machine Learning Researcher</p>
-    <p>Shanghai AI Lab, Shanghai, China</p>
-    <p>Supervised by Dr. Junjun He</p>
+    <p><a href="https://www.shlab.org.cn/">Shanghai AI Lab</a>, Shanghai, China</p>
+    <p>Supervised by <a href="https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl=zh-CN">Dr. Junjun He</a></p>
     <p>MRes Graduate from Imperial College London</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -32,27 +32,24 @@ latest_posts:
   limit: 10 # leave blank to include all the blog posts
 ---
 
-I am a Machine Learning Researcher at Shanghai AI Lab, where I conduct cutting-edge research on multimodal AI models with a focus on medical applications. Currently supervised by **Dr. Junjun He**, my work centers on developing advanced AI systems that bridge the gap between computer vision and healthcare applications.
+I am a Machine Learning Researcher at [**Shanghai AI Lab**](https://www.shlab.org.cn/), supervised by [**Dr. Junjun He**](https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl=zh-CN), focusing on multimodal AI for medical applications. My work centers on large-scale synthetic data generation, including **RetinaLogos** (text-driven retinal image synthesis with precise anatomical details) and **Project Imaging-X** (consolidating 1000+ medical imaging datasets worldwide for next-generation medical AI infrastructure).
 
-At Shanghai AI Lab, I conduct research on multimodal models with applications in general medical scenarios, focusing on designing workflows for large-scale data generation to create synthetic datasets with millions of samples. I have contributed to the development of **RetinaLogos**, a groundbreaking text-guided retinal image generation model that synthesizes high-resolution color fundus photography (CFP) images with precise anatomical details. Additionally, I contribute to **Project Imaging-X**, a strategic initiative consolidating 1000+ open medical imaging datasets worldwide to build foundational infrastructure for next-generation medical AI models.
+I completed my MRes with Distinction at Imperial College London (Oct 2023 - Oct 2024), supervised by [**Dr. Matthieu Komorowski**](https://scholar.google.com/citations?user=xpAYtroAAAAJ&hl=en) and [**Dr. Guang Yang**](https://scholar.google.com/citations?user=ZfzEFpsAAAAJ&hl=en), collaborating with medical clinicians and contributing to MICCAI submissions and research funding proposals.
 
-During my time as a Graduate Research Student at Imperial College London (Oct 2023 - Oct 2024), I actively engaged in lab activities including hosting Journal Clubs and collaborating closely with medical and ICU clinicians. I participated in multiple research projects, managed paper submission workflows for top conferences like MICCAI, and contributed to securing industrial funding for innovative research proposals. I completed my MRes with Distinction (First-Class Honours), supervised by [**Dr. Matthieu Komorowski**](https://www.linkedin.com/in/matthieukomorowski/) and [**Dr. Guang Yang**](https://www.linkedin.com/in/gyangmedia/).
-
-My educational background includes a Bachelor of Science (Honours) in Data Science from The University of Sydney (Overall WAM 89.5 with **University Medal**) and a Bachelor of Science in Mathematics and Statistics from The University of Melbourne (First-Class Honours).
+My educational background includes a Bachelor of Science (Honours) in Data Science with **University Medal**  and a concurrent Diploma in Computing from The University of Sydney, as well as a Bachelor of Science in Mathematics and Statistics from The University of Melbourne (First-Class Honours).
 
 My current research focuses on advancing **Generative AI** for healthcare applications, with specific achievements in:
 
-- **Multimodal Medical AI**: Contributing to GMAI-VL-R1, a reinforcement learning-enhanced model for complex medical reasoning and decision-making
-- **Large-scale Medical Data Synthesis**: Contributing to the RetinaLogos-1400k dataset with 1.4 million synthetic retinal images for ophthalmology applications
-- **Vision-Language Models in Healthcare**: Working on text-guided medical image generation and analysis systems
-- **Deep Generative Models**: Contributing to medical image translation, particularly in chest X-ray opacity removal and anatomical structure enhancement
-- **Synthetic Dataset Creation**: Contributing to scalable workflows for generating millions of high-quality medical training samples
+- **Multimodal Medical AI**: Contributing to GMAI-VL-R1 (RL-enhanced medical reasoning) and vision-language models for text-guided medical image generation and analysis
+- **Large-scale Synthetic Data Generation**: Contributing to RetinaLogos-1400k dataset (1.4M synthetic retinal images) and scalable workflows for generating millions of high-quality medical training samples
+- **Deep Generative Models**: Contributing to medical image translation, including chest X-ray opacity removal and anatomical structure enhancement
 
-I have contributed to publications at top-tier venues including **MICCAI 2025** (4 accepted papers, including 1 oral presentation and 1 spotlight), **ISBI 2025**, **WACV 2025**, **IJCAI 2025**, **Pattern Recognition Letters**, and **NeurIPS Workshop**. Key contributions include participating in the development of the largest synthetic retinal image dataset (RetinaLogos-1400k with 1.4M images), contributing to Project Imaging-X consolidating 1000+ medical datasets, and working on reinforcement learning approaches for medical reasoning.
+I have contributed to publications at top-tier venues including **MICCAI 2025** (4 papers: 1 oral, 1 spotlight), **ISBI 2025**, **WACV 2025**, **IJCAI 2025**, **Pattern Recognition Letters**, and **NeurIPS Workshop**.
 
 **Awards and Recognition:**
 
-- **University Medal** in Bachelor of Science (Honours), University of Sydney (2023)
+- **University Medal**, Bachelor of Science (Honours) in Data Science, University of Sydney (2023)
+- **Dean's Honours List for Data Science**, University of Sydney (2023)
 - **Melbourne International Undergraduate Scholarship**, University of Melbourne (2022)
 - **Dean's Honours List**, University of Melbourne (2019)
 
