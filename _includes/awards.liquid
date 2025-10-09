@@ -1,8 +1,3 @@
 <div class="awards">
-  <ul>
-    <li><strong>University Medal</strong>, Bachelor of Science (Honours) in Data Science, University of Sydney (2023)</li>
-    <li><strong>Dean's Honours List for Data Science</strong>, University of Sydney (2023)</li>
-    <li><strong>Melbourne International Undergraduate Scholarship</strong>, University of Melbourne (2022)</li>
-    <li><strong>Dean's Honours List</strong>, University of Melbourne (2019)</li>
-  </ul>
+  {{ site.content | where: "title", "Awards & Recognition" | first | map: "content" }}
 </div>
