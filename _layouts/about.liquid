@@ -73,6 +73,14 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- Acknowledgments -->
+    {% if page.acknowledgments %}
+      <h2>
+        <a style="color: inherit">🙏 Acknowledgments</a>
+      </h2>
+      {% include acknowledgments.liquid %}
+    {% endif %}
+
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}

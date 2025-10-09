@@ -20,6 +20,7 @@ profile:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+acknowledgments: true # includes acknowledgments section at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -40,9 +41,9 @@ My educational background includes a Bachelor of Science (Honours) in Data Scien
 
 ---
 
-<div class="education-affiliations" style="text-align: center; margin: 40px 0; padding: 20px 0; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0;">
+<div class="education-affiliations" style="text-align: center; margin: 40px auto; padding: 20px 0; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; max-width: 800px;">
   <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 25px; color: #555;">Academic Affiliations</h3>
-  <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+  <div style="display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap; max-width: 100%;">
     <a href="https://www.sydney.edu.au/" target="_blank" title="University of Sydney" style="transition: transform 0.2s;">
       <img src="/assets/img/usyd_logo.svg" alt="University of Sydney" style="max-height: 45px; max-width: 140px; object-fit: contain;">
     </a>
