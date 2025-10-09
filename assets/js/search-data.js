@@ -377,6 +377,31 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "content-acknowledgments",
+          title: 'Acknowledgments',
+          description: "",
+          section: "Content",handler: () => {
+              window.location.href = "/content/acknowledgments/";
+            },},{id: "content-awards-amp-recognition",
+          title: 'Awards &amp;amp; Recognition',
+          description: "",
+          section: "Content",handler: () => {
+              window.location.href = "/content/awards/";
+            },},{id: "content-publications-summary",
+          title: 'Publications Summary',
+          description: "",
+          section: "Content",handler: () => {
+              window.location.href = "/content/publications_summary/";
+            },},{id: "content-research-focus",
+          title: 'Research Focus',
+          description: "",
+          section: "Content",handler: () => {
+              window.location.href = "/content/research_focus/";
+            },},{id: "content-seeking-opportunities",
+          title: 'Seeking Opportunities',
+          description: "",
+          section: "Content",handler: () => {
+              window.location.href = "/content/seeking_opportunities/";
             },},{id: "news-graduated-from-imperial-college-london-with-mres-in-ai-and-machine-learning-distinction-first-class-honours",
           title: '🎓 Graduated from Imperial College London with MRes in AI and Machine Learning...',
           description: "",
