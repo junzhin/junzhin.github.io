@@ -40,6 +40,35 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Publications Summary -->
+    {% if page.publications_summary %}
+      {% include publications_summary.liquid %}
+    {% endif %}
+
+    <!-- Research Focus -->
+    {% if page.research_focus %}
+      <h2>
+        <a style="color: inherit">🔬 Research Focus</a>
+      </h2>
+      {% include research_focus.liquid %}
+    {% endif %}
+
+    <!-- Awards & Recognition -->
+    {% if page.awards %}
+      <h2>
+        <a style="color: inherit">🏆 Awards & Recognition</a>
+      </h2>
+      {% include awards.liquid %}
+    {% endif %}
+
+    <!-- Seeking Opportunities -->
+    {% if page.seeking_opportunities %}
+      <h2>
+        <a style="color: inherit">💼 Seeking Opportunities</a>
+      </h2>
+      {% include seeking_opportunities.liquid %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>

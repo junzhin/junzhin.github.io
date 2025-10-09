@@ -18,6 +18,10 @@ profile:
     <p>Supervised by <a href="https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl=zh-CN">Dr. Junjun He</a></p>
     <p>MRes Graduate from Imperial College London</p>
 
+publications_summary: true # includes publications summary card
+research_focus: true # includes research focus section
+awards: true # includes awards and recognition section
+seeking_opportunities: true # includes seeking opportunities section
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 acknowledgments: true # includes acknowledgments section at the bottom of the page
@@ -59,44 +63,3 @@ My educational background includes a Bachelor of Science (Honours) in Data Scien
   </div>
 </div>
 
----
-
-<div class="publication-summary" style="margin: 35px -20px 30px -20px; padding: 25px 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  <h3 style="color: white; font-size: 1.4rem; font-weight: 700; margin-bottom: 18px; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); letter-spacing: 0.5px;">📚 Publications Summary</h3>
-  <p style="color: white; font-size: 1rem; font-weight: 500; margin: 0; line-height: 2; text-align: center;">
-    4× MICCAI 2025 <span style="opacity: 0.9;">(1 oral, 1 spotlight)</span> •
-    1× WACV 2025 •
-    1× IJCAI 2024 •
-    1× ISBI 2025 •
-    1× PRL •
-    1× NeurIPS Workshop <span style="opacity: 0.9;">(oral)</span> •
-    3× Under Review <span style="opacity: 0.9;">(arXiv/Tech Report)</span>
-  </p>
-</div>
-
----
-
-### 🔬 Research Focus
-
-My current research focuses on advancing **Generative AI** for healthcare applications, with specific achievements in:
-
-- **Multimodal Medical AI**: Contributing to GMAI-VL-R1 (RL-enhanced medical reasoning) and vision-language models for text-guided medical image generation and analysis
-- **Large-scale Synthetic Data Generation**: Contributing to RetinaLogos-1400k dataset (1.4M synthetic retinal images) and scalable workflows for generating millions of high-quality medical training samples
-- **Deep Generative Models**: Contributing to medical image translation, including chest X-ray opacity removal and anatomical structure enhancement
-
-I have contributed to publications at top-tier venues including **MICCAI 2025** (4 papers: 1 oral, 1 spotlight), **ISBI 2025**, **WACV 2025**, **IJCAI 2025**, **Pattern Recognition Letters**, and **NeurIPS Workshop**.
-
-### 🏆 Awards & Recognition
-
-- **University Medal**, Bachelor of Science (Honours) in Data Science, University of Sydney (2023)
-- **Dean's Honours List for Data Science**, University of Sydney (2023)
-- **Melbourne International Undergraduate Scholarship**, University of Melbourne (2022)
-- **Dean's Honours List**, University of Melbourne (2019)
-
-### 💼 Seeking Opportunities
-
-**I am actively seeking PhD positions for Fall 2025 and Spring 2026, as well as research internship opportunities.**
-
-Feel free to contact me for research opportunities and collaboration.
-
-_"Positivity is the essence of progress. In every challenge, I see an opportunity for learning and growth."_
