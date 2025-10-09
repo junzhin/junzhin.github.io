@@ -1,3 +1,4 @@
 <div class="acknowledgments">
-  {{ site.content | where: 'title', 'Acknowledgments' | first | map: 'content' }}
+  {% assign ack = site.content | where: 'title', 'Acknowledgments' | first %}
+  {{ ack.content }}
 </div>

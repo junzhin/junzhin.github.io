@@ -1,3 +1,4 @@
 <div class="seeking-opportunities">
-  {{ site.content | where: 'title', 'Seeking Opportunities' | first | map: 'content' }}
+  {% assign opportunities = site.content | where: 'title', 'Seeking Opportunities' | first %}
+  {{ opportunities.content }}
 </div>

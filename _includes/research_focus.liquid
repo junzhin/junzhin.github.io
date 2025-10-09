@@ -1,3 +1,4 @@
 <div class="research-focus">
-  {{ site.content | where: 'title', 'Research Focus' | first | map: 'content' }}
+  {% assign research = site.content | where: 'title', 'Research Focus' | first %}
+  {{ research.content }}
 </div>

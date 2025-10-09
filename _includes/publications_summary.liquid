@@ -1,1 +1,2 @@
-{{ site.content | where: 'title', 'Publications Summary' | first | map: 'content' }}
+{% assign pub_summary = site.content | where: 'title', 'Publications Summary' | first %}
+{{ pub_summary.content }}
