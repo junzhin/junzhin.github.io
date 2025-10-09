@@ -60,6 +60,23 @@ My educational background includes a Bachelor of Science (Honours) in Data Scien
 
 ---
 
+<div class="publication-summary" style="margin: 35px -20px 30px -20px; padding: 25px 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <h3 style="color: white; font-size: 1.4rem; font-weight: 700; margin-bottom: 18px; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); letter-spacing: 0.5px;">📚 Selected Publications</h3>
+  <p style="color: white; font-size: 1rem; font-weight: 500; margin: 0; line-height: 2; text-align: center;">
+    4× MICCAI 2025 <span style="opacity: 0.9;">(1 oral, 1 spotlight)</span> •
+    1× WACV 2025 •
+    1× IJCAI 2024 •
+    1× ISBI 2025 •
+    1× PRL •
+    1× NeurIPS Workshop <span style="opacity: 0.9;">(oral)</span> •
+    3× Under Review <span style="opacity: 0.9;">(arXiv/Tech Report)</span>
+  </p>
+</div>
+
+---
+
+### 🔬 Research Focus
+
 My current research focuses on advancing **Generative AI** for healthcare applications, with specific achievements in:
 
 - **Multimodal Medical AI**: Contributing to GMAI-VL-R1 (RL-enhanced medical reasoning) and vision-language models for text-guided medical image generation and analysis
@@ -68,12 +85,14 @@ My current research focuses on advancing **Generative AI** for healthcare applic
 
 I have contributed to publications at top-tier venues including **MICCAI 2025** (4 papers: 1 oral, 1 spotlight), **ISBI 2025**, **WACV 2025**, **IJCAI 2025**, **Pattern Recognition Letters**, and **NeurIPS Workshop**.
 
-**Awards and Recognition:**
+### 🏆 Awards & Recognition
 
 - **University Medal**, Bachelor of Science (Honours) in Data Science, University of Sydney (2023)
 - **Dean's Honours List for Data Science**, University of Sydney (2023)
 - **Melbourne International Undergraduate Scholarship**, University of Melbourne (2022)
 - **Dean's Honours List**, University of Melbourne (2019)
+
+### 💼 Seeking Opportunities
 
 **I am actively seeking PhD positions for Fall 2025 and Spring 2026, as well as research internship opportunities.**
 
