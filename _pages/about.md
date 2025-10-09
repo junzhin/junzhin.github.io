@@ -62,4 +62,3 @@ My educational background includes a Bachelor of Science (Honours) in Data Scien
     </a>
   </div>
 </div>
-
