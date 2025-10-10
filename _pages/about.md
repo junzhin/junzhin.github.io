@@ -37,11 +37,11 @@ latest_posts:
   limit: 10 # leave blank to include all the blog posts
 ---
 
-I am a Machine Learning Researcher in the **General Medical AI (GMAI)** group at [**Shanghai AI Lab**](https://www.shlab.org.cn/), supervised by [**Dr. Junjun He**](https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl=zh-CN), focusing on multimodal AI for medical applications. My work centers on large-scale synthetic data generation, including **RetinaLogos** (text-driven retinal image synthesis with precise anatomical details) and **Project Imaging-X** (consolidating 1000+ medical imaging datasets worldwide for next-generation medical AI infrastructure).
+I am a Machine Learning Researcher in the **General Medical AI (GMAI)** group at [**Shanghai AI Lab**](https://www.shlab.org.cn/), supervised by [**Dr. Junjun He**](https://scholar.google.com/citations?user=Z4LgebkAAAAJ&hl=zh-CN). My research focuses on **generative AI** and **multimodal learning** for medical applications, specializing in large-scale synthetic data generation and deep generative models. I work on developing scalable workflows to create millions of high-quality medical training samples, addressing critical challenges in data scarcity and domain adaptation for healthcare AI.
 
-I completed my MRes with Distinction at Imperial College London (Oct 2023 - Oct 2024), supervised by [**Dr. Matthieu Komorowski**](https://scholar.google.com/citations?user=xpAYtroAAAAJ&hl=en) and [**Dr. Guang Yang**](https://scholar.google.com/citations?user=ZfzEFpsAAAAJ&hl=en), collaborating with medical clinicians and contributing to MICCAI submissions and research funding proposals.
+I completed my MRes with **Distinction** at Imperial College London (Oct 2023 - Oct 2024), where my research project ranked **Top 5** among the entire cohort. Supervised by [**Dr. Matthieu Komorowski**](https://scholar.google.com/citations?user=xpAYtroAAAAJ&hl=en) and [**Dr. Guang Yang**](https://scholar.google.com/citations?user=ZfzEFpsAAAAJ&hl=en), I developed deep generative models for chest X-ray image translation to improve diagnostic accuracy. During this period, I collaborated with ICU clinicians and contributed to research proposals for industrial funding.
 
-My educational background includes a Bachelor of Science (Honours) in Data Science with **University Medal** and a concurrent Diploma in Computing from The University of Sydney, as well as a Bachelor of Science in Mathematics and Statistics from The University of Melbourne (First-Class Honours).
+My educational background includes a Bachelor of Science (Honours) in Data Science with **University Medal** from The University of Sydney, a concurrent Diploma in Computing, and a Bachelor of Science in Mathematics and Statistics from The University of Melbourne (First-Class Honours).
 
 ---
 
