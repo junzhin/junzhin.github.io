@@ -378,7 +378,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false # enables google analytics
+enable_google_analytics: true # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
@@ -644,3 +644,15 @@ jsonresume:
   - languages
   - interests
   - references
+
+# -----------------------------------------------------------------------------
+# Visitor Tracking & Analytics Map
+# -----------------------------------------------------------------------------
+
+visitor_map:
+  enabled: false # enables visitor map on the website
+  provider: clustrmaps # options: 'clustrmaps' or 'flagcounter'
+  position: about_page # options: 'about_page', 'footer', 'both'
+  clustrmaps_id: "" # your ClustrMaps widget ID (get from https://clustrmaps.com/add)
+  flagcounter_id: "" # or your Flag Counter ID (get from https://flagcounter.com/)
+  show_counter: true # show visitor counter badge below the map

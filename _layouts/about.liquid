@@ -110,6 +110,13 @@ layout: default
       {% include acknowledgments.liquid %}
     {% endif %}
 
+    <!-- Visitor Map -->
+    {% if site.visitor_map and site.visitor_map.enabled %}
+      {% if site.visitor_map.position == 'about_page' or site.visitor_map.position == 'both' %}
+        {% include visitor_map.liquid %}
+      {% endif %}
+    {% endif %}
+
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
