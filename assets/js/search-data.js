@@ -426,6 +426,9 @@ ninja.data = [{
           section: "News",},{id: "news-first-author-paper-accepted-at-miccai-2025-retinalogos-a-novel-text-guided-retinal-image-synthesis-model-with-fine-grained-anatomical-control-️",
           title: '🎉 First-author paper accepted at MICCAI 2025! RetinaLogos: A novel text-guided retinal image...',
           description: "",
+          section: "News",},{id: "news-new-preprint-on-arxiv-unimedvl-a-unified-multimodal-framework-for-medical-image-understanding-and-generation-through-the-observation-knowledge-analysis-paradigm",
+          title: '🚀 New preprint on arXiv! UniMedVL: A unified multimodal framework for medical image...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
