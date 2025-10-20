@@ -875,6 +875,14 @@ footer.sticky-bottom {
       border-color: var(--global-highlight-color);
     }
   }
+
+  // Auto-expand abstracts in selected publications
+  &.selected-publications {
+    .abstract.hidden {
+      max-height: 100em;
+      border-color: var(--global-text-color);
+    }
+  }
 }
 
 // Rouge Color Customization
