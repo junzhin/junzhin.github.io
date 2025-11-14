@@ -102,6 +102,14 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- Reviewer Service -->
+    {% if page.reviewer_service %}
+      <h2>
+        <a style="color: inherit">📝 Reviewer Service</a>
+      </h2>
+      {% include reviewer_service.liquid %}
+    {% endif %}
+
     <!-- Acknowledgments -->
     {% if page.acknowledgments %}
       <h2>

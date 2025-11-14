@@ -24,6 +24,7 @@ awards: true # includes awards and recognition section
 seeking_opportunities: true # includes seeking opportunities section
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+reviewer_service: true # includes reviewer service section
 acknowledgments: true # includes acknowledgments section at the bottom of the page
 
 announcements:
