@@ -397,6 +397,11 @@ ninja.data = [{
           description: "",
           section: "Content",handler: () => {
               window.location.href = "/content/research_focus/";
+            },},{id: "content-reviewer-service",
+          title: 'Reviewer Service',
+          description: "",
+          section: "Content",handler: () => {
+              window.location.href = "/content/reviewer_service/";
             },},{id: "content-seeking-opportunities",
           title: 'Seeking Opportunities',
           description: "",
