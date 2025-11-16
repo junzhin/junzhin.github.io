@@ -15,12 +15,12 @@ description: "Curriculum Vitae - Research in Machine Learning and Medical Imagin
 
 - MRes in Artificial Intelligence and Machine Learning, Imperial College London, 2024
   - Grade: Distinction (First-Class Honours)
-  - Supervisors: Dr. Guang Yang and Dr. Matthieu Komorowski
+  - Supervisors: [Dr. Guang Yang](https://scholar.google.com/citations?user=ZfzEFpsAAAAJ) and [Dr. Matthieu Komorowski](https://scholar.google.com/citations?user=xpAYtroAAAAJ)
   - Focus: Medical imaging and AI applications
 - B.S. (Honours) in Data Science, The University of Sydney, 2023
   - Overall WAM: 89.5 with University Medal
   - Thesis: "Enhancing Night-to-Day Image Translation with Semantic Prior and Reference Image Guidance"
-  - Supervisors: Dr. Tongliang Liu and Dr. Mingming Gong
+  - Supervisors: Dr. Tongliang Liu and [Dr. Mingming Gong](https://openreview.net/profile?id=%7EMingming_Gong2)
 - B.S. in Mathematics and Statistics, The University of Melbourne, 2022
   - Overall WAM: 86.8 (First-Class Honours)
   - Concurrent diploma in Computing
@@ -37,7 +37,7 @@ description: "Curriculum Vitae - Research in Machine Learning and Medical Imagin
 
   - Imperial College London, UK
   - Duties: Advanced research in medical image analysis
-  - Supervisor: Dr. Guang Yang and Dr. Matthieu Komorowski
+  - Supervisor: [Dr. Guang Yang](https://scholar.google.com/citations?user=ZfzEFpsAAAAJ) and [Dr. Matthieu Komorowski](https://scholar.google.com/citations?user=xpAYtroAAAAJ)
 
 - Aug 2022 - Jun 2023: Research Assistant
 

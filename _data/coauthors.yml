@@ -32,3 +32,50 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"he":
+  - firstname: ["Junjun", "J."]
+    url: https://scholar.google.com/citations?user=Z4LgebkAAAAJ
+
+"yang":
+  - firstname: ["Guang", "G."]
+    url: https://scholar.google.com/citations?user=ZfzEFpsAAAAJ
+
+"komorowski":
+  - firstname: ["Matthieu", "M."]
+    url: https://scholar.google.com/citations?user=xpAYtroAAAAJ
+
+"gong":
+  - firstname: ["Mingming", "Minming", "M."]
+    url: https://openreview.net/profile?id=%7EMingming_Gong2
+
+"liu":
+  - firstname: ["Lihao", "L."]
+    url: https://openreview.net/profile?id=~Lihao_Liu1
+
+  - firstname: ["Jiyao", "J."]
+    url: https://liujiyaofdu.github.io
+
+"zhang":
+  - firstname: ["Sheng", "S."]
+    url: https://openreview.net/profile?id=~Sheng_Zhang5
+
+"xing":
+  - firstname: ["Xiaodan", "X."]
+    url: https://scholar.google.com/citations?user=dUFYArYAAAAJ
+
+"fang":
+  - firstname: ["Yingying", "Y."]
+    url: https://scholar.google.com/citations?user=StqmF6oAAAAJ
+
+"tang":
+  - firstname: ["Cheng", "C."]
+    url: https://chengtang-ai.github.io
+
+"li":
+  - firstname: ["Wei", "W."]
+    url: https://scholar.google.com/citations?user=TGIvczYAAAAJ
+
+"xu":
+  - firstname: ["Huihui", "H."]
+    url: https://scholar.google.com/citations?user=2dM6prwAAAAJ
