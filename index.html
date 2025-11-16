@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Junzhi Ning | Generative Medical AI & Multimodal Research</title>
+    <meta
+      name="description"
+      content="Personal research blog of Junzhi (Raymond) Ning – Machine Learning Researcher at Shanghai AI Lab, working on generative AI, multimodal medical AI, and large-scale synthetic data generation."
+    />
+    <meta name="theme-color" content="#050816" />
+
+    <!-- Basic social sharing preview -->
+    <meta property="og:title" content="Junzhi Ning | Generative Medical AI & Multimodal Research" />
+    <meta
+      property="og:description"
+      content="Machine Learning Researcher at Shanghai AI Lab – generative AI, multimodal learning, and synthetic data for medical imaging."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://junzhin.github.io" />
+    <meta property="og:image" content="assets/img/optimized_solution.jpg" />
+
+    <link rel="icon" type="image/png" href="assets/img/optimized_solution.jpg" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Inline SVG icon library -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <defs>
+        <!-- Mail -->
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+          <polyline
+            points="4 7.5 12 12.5 20 7.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+
+        <!-- GitHub -->
+        <symbol id="icon-github" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M12 2.2C6.5 2.2 2 6.7 2 12.2c0 4.4 2.9 8.1 6.8 9.4.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.6.8.1-.6.3-1 .6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 2-1.3 2.8-1 2.8-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.3.3.7.9.7 1.8v2.6c0 .3.2.6.7.5 4-1.3 6.8-5 6.8-9.4C22 6.7 17.5 2.2 12 2.2z"
+          />
+        </symbol>
+
+        <!-- LinkedIn -->
+        <symbol id="icon-linkedin" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+          <rect x="7" y="10" width="2.4" height="7" fill="currentColor" />
+          <circle cx="8.2" cy="7.3" r="1.3" fill="currentColor" />
+          <path
+            d="M12 10h2.2c1.6 0 2.8 1.2 2.8 3v4h-2.4v-3.5c0-.9-.5-1.5-1.3-1.5-.8 0-1.3.6-1.3 1.5V17H10v-7h2z"
+            fill="currentColor"
+          />
+        </symbol>
+
+        <!-- Scholar (stylized book) -->
+        <symbol id="icon-scholar" viewBox="0 0 24 24">
+          <path
+            d="M5 5.5c0-.8.6-1.5 1.4-1.5l11.2 1.7c.5.1.9.5.9 1v11.3c0 .7-.7 1.2-1.4 1l-10.7-2.7c-.8-.2-1.4-.9-1.4-1.7V5.5z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9 7v10"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+          />
+        </symbol>
+
+        <!-- Beaker (research) -->
+        <symbol id="icon-research" viewBox="0 0 24 24">
+          <path
+            d="M9 3h6M10 3v5.3L6.6 18c-.5 1.3.4 2.7 1.8 2.7h7.2c1.4 0 2.3-1.4 1.8-2.7L14 8.3V3"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <circle cx="10" cy="13.5" r="0.8" fill="currentColor" />
+          <circle cx="14" cy="15.5" r="0.8" fill="currentColor" />
+        </symbol>
+
+        <!-- Pen (blog / writing) -->
+        <symbol id="icon-pen" viewBox="0 0 24 24">
+          <path
+            d="M5 19l2.2-6.6L16 3.6c.6-.6 1.6-.6 2.2 0l2.2 2.2c.6.6.6 1.6 0 2.2L11.4 17.8 5 19z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M13.5 6.5l3 3"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+        </symbol>
+
+        <!-- Arrow down -->
+        <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+          <path
+            d="M12 4v14M6.5 13l5.5 5 5.5-5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="site">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="#top" class="site-logo" aria-label="Back to top">
+            <span class="site-logo__mark"></span>
+            <span class="site-logo__text">JN Research</span>
+          </a>
+          <nav class="site-nav" aria-label="Main navigation">
+            <button class="site-nav__toggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span><span></span>
+            </button>
+            <ul class="site-nav__list">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#highlights">Highlights</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#awards">Awards</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <!-- Hero -->
+        <section id="hero" class="section hero">
+          <div class="hero__bg">
+            <div class="hero-orb hero-orb--one"></div>
+            <div class="hero-orb hero-orb--two"></div>
+            <div class="hero-orb hero-orb--three"></div>
+          </div>
+          <div class="hero__inner">
+            <div class="hero__content">
+              <p class="hero__kicker">Generative Medical AI · Multimodal Learning</p>
+              <h1 class="hero__title">
+                Junzhi (Raymond) Ning
+              </h1>
+              <p class="hero__subtitle">
+                I am a Machine Learning Researcher in the
+                <strong>General Medical AI (GMAI)</strong> group at
+                <strong>Shanghai AI Lab</strong>, supervised by
+                <strong><a href="https://scholar.google.com/citations?user=Z4LgebkAAAAJ" target="_blank" rel="noreferrer">Dr. Junjun He</a></strong>. My research focuses on
+                <strong>generative AI</strong> and <strong>multimodal learning</strong>
+                for medical applications, specializing in large-scale synthetic data
+                generation and deep generative models. I work on developing scalable
+                workflows to create millions of high-quality medical training samples,
+                addressing critical challenges in data scarcity and domain adaptation
+                for healthcare AI.
+              </p>
+              <div class="hero__bio">
+                <p>
+                  I completed my <strong>MRes with Distinction</strong> at
+                  <strong>Imperial College London</strong> (Oct 2023 - Oct 2024),
+                  supervised by <strong><a href="https://scholar.google.com/citations?user=xpAYtroAAAAJ" target="_blank" rel="noreferrer">Dr. Matthieu Komorowski</a></strong> and
+                  <strong><a href="https://scholar.google.com/citations?user=ZfzEFpsAAAAJ" target="_blank" rel="noreferrer">Dr. Guang Yang</a></strong> jointly. I developed deep generative
+                  models for chest X-ray image translation to improve diagnostic accuracy.
+                  During this period, I collaborated with ICU clinicians and contributed
+                  to research proposals for industrial funding.
+                </p>
+                <p>
+                  My educational background includes a <strong>Bachelor of Science (Honours)
+                  in Data Science with University Medal</strong> from
+                  <strong>The University of Sydney</strong>, a concurrent
+                  <strong>Diploma in Computing</strong>, and a
+                  <strong>Bachelor of Science in Mathematics and Statistics</strong>
+                  from <strong>The University of Melbourne</strong> (First-Class Honours).
+                </p>
+              </div>
+              <div class="hero__cta">
+                <a href="#research" class="button button--primary">
+                  <svg class="icon"><use href="#icon-research"></use></svg>
+                  Research focus
+                </a>
+                <a href="#highlights" class="button button--ghost">
+                  <svg class="icon"><use href="#icon-pen"></use></svg>
+                  Publications & highlights
+                </a>
+              </div>
+              <div class="hero__meta">
+                <div class="hero-chip">PhD-seeking · Fall 2025 / Spring 2026</div>
+                <button class="hero-scroll" type="button" data-scroll-target="#research">
+                  <svg class="icon hero-scroll__icon"><use href="#icon-arrow-down"></use></svg>
+                  Scroll to overview
+                </button>
+              </div>
+              <div class="hero__social">
+                <a href="mailto:ningjunzhi85@gmail.com" aria-label="Email">
+                  <svg class="icon"><use href="#icon-mail"></use></svg>
+                </a>
+                <a href="https://github.com/junzhin" target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <svg class="icon"><use href="#icon-github"></use></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/junzhin" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <svg class="icon"><use href="#icon-linkedin"></use></svg>
+                </a>
+                <a
+                  href="https://www.semanticscholar.org/author/Junzhi-Ning/2353285720"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Semantic Scholar"
+                >
+                  <svg class="icon"><use href="#icon-scholar"></use></svg>
+                </a>
+                <a
+                  href="https://openreview.net/profile?id=%7EJunzhi_Ning1"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="OpenReview"
+                >
+                  <img src="assets/img/openreview.jpeg" alt="" class="icon icon--image" />
+                </a>
+              </div>
+            </div>
+            <div class="hero__media">
+              <div class="hero-card reveal">
+                <div class="hero-card__image">
+                  <img src="assets/img/prof_pic.jpg" alt="Portrait of Junzhi (Raymond) Ning" />
+                  <div class="hero-card__badge">Generative AI × Medicine</div>
+                </div>
+                <div class="hero-card__body">
+                  <p class="hero-card__title">Portrait of a man in quest of the unknown, yet satisfied.</p>
+                  <p class="hero-card__text">
+                    MRes in Machine Learning at Imperial College London. Researching generative models,
+                    synthetic data pipelines, and vision–language systems for medical imaging.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Research overview -->
+        <section id="research" class="section section--padded">
+          <div class="section__label">Research Overview</div>
+          <div class="section__header">
+            <h2 class="section__title">Generative AI & Multimodal Medical Intelligence</h2>
+            <p class="section__subtitle">
+              My work advances <strong>Generative AI</strong> for healthcare applications, with a focus on
+              <strong>multimodal medical AI</strong>, <strong>large-scale synthetic data generation</strong>, and
+              <strong>deep generative models</strong> for medical imaging.
+            </p>
+          </div>
+
+          <div class="grid grid--3 research-grid">
+            <article class="card research-card reveal">
+              <div class="card__icon">
+                <svg class="icon"><use href="#icon-research"></use></svg>
+              </div>
+              <h3 class="card__title">Multimodal Medical AI</h3>
+              <p class="card__body">
+                Contributing to GMAI-VL-R1 (RL-enhanced medical reasoning) and vision–language models for
+                text-guided medical image generation and analysis.
+              </p>
+            </article>
+
+            <article class="card research-card reveal">
+              <div class="card__icon card__icon--accent-1">
+                <svg class="icon"><use href="#icon-research"></use></svg>
+              </div>
+              <h3 class="card__title">Large-scale Synthetic Data</h3>
+              <p class="card__body">
+                Building RetinaLogos-1400k (1.4M synthetic retinal images) and scalable workflows for generating
+                millions of high-quality medical training samples.
+              </p>
+            </article>
+
+            <article class="card research-card reveal">
+              <div class="card__icon card__icon--accent-2">
+                <svg class="icon"><use href="#icon-research"></use></svg>
+              </div>
+              <h3 class="card__title">Deep Generative Models</h3>
+              <p class="card__body">
+                Developing generative models for chest X-ray translation, opacity removal, and anatomical enhancement
+                to support more accurate and robust diagnosis.
+              </p>
+            </article>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-pill reveal">
+              <span class="stat-pill__label">MICCAI 2025</span>
+              <span class="stat-pill__value">4×</span>
+              <span class="stat-pill__note">1 oral · 1 spotlight</span>
+            </div>
+            <div class="stat-pill reveal">
+              <span class="stat-pill__label">Other venues</span>
+              <span class="stat-pill__value">5+</span>
+              <span class="stat-pill__note">WACV · ISBI · IJCAI · PRL · NeurIPS WS</span>
+            </div>
+            <div class="stat-pill stat-pill--highlight reveal">
+              <span class="stat-pill__label">Open to opportunities</span>
+              <span class="stat-pill__value">PhD 2025–26</span>
+              <span class="stat-pill__note">Research internships & collaborations</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Highlights: publications, awards, opportunities -->
+        <section id="highlights" class="section section--padded section--split">
+          <div class="section__label">Highlights</div>
+          <div class="section__header">
+            <h2 class="section__title">Publications, Awards & Opportunities</h2>
+            <p class="section__subtitle">
+              A snapshot of selected publications, academic recognition, and current goals.
+            </p>
+          </div>
+
+          <div class="highlights-grid">
+            <!-- Full-width Publications Summary -->
+            <article class="card highlight-card highlight-card--gradient highlight-card--full reveal">
+              <h3 class="card__title">Publications summary</h3>
+              <p class="card__body card__body--large">
+                4× MICCAI 2025 (1 oral, 1 spotlight) · 1× WACV 2025 · 1× IJCAI 2024 · 1× ISBI 2025 ·
+                1× Pattern Recognition Letters · 1× NeurIPS Workshop (oral) · 3× under review
+                (arXiv / technical reports).
+              </p>
+            </article>
+
+            <!-- Two-column blocks below -->
+            <article class="card highlight-card highlight-card--outline reveal">
+              <h3 class="card__title">Research Focus</h3>
+              <div class="chip-row">
+                <span class="chip chip--soft">Medical imaging</span>
+                <span class="chip chip--soft">Vision–language</span>
+                <span class="chip chip--soft">Synthetic data</span>
+              </div>
+            </article>
+
+            <article class="card highlight-card highlight-card--outline reveal">
+              <h3 class="card__title">Awards & recognition</h3>
+              <ul class="card__list">
+                <li><strong>University Medal</strong>, BSc (Hons) in Data Science, University of Sydney (2023)</li>
+                <li><strong>Dean's Honours List for Data Science</strong>, University of Sydney (2023)</li>
+                <li><strong>Melbourne International Undergraduate Scholarship</strong>, University of Melbourne (2022)</li>
+                <li><strong>Dean's Honours List</strong>, University of Melbourne (2019)</li>
+              </ul>
+            </article>
+
+            <article class="card highlight-card highlight-card--accent highlight-card--full reveal">
+              <h3 class="card__title">Seeking opportunities</h3>
+              <p class="card__body">
+                I am actively seeking <strong>PhD positions for Fall 2025 and Spring 2026</strong>,
+                as well as <strong>research internships</strong> in generative AI, multimodal learning,
+                and medical imaging.
+              </p>
+              <p class="card__body">
+                Feel free to reach out if you are interested in collaborations or have openings in related areas.
+              </p>
+              <blockquote class="quote">
+                <p>
+                  "Positivity is the essence of progress. In every challenge, I see an opportunity for learning and growth."
+                </p>
+              </blockquote>
+            </article>
+          </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" class="section section--padded section--split">
+          <div class="section__label">Publications</div>
+          <div class="section__header">
+            <h2 class="section__title">Selected publications</h2>
+            <p class="section__subtitle">
+              Recent work spanning generative medical imaging, multimodal reasoning, and data-centric healthcare AI.
+            </p>
+          </div>
+
+          <!-- Group 1: First-author Publications -->
+          <h3 class="pub-group-title">First-author Publications</h3>
+          <div class="media-grid">
+            <!-- UniMedVL -->
+            <figure class="media-card media-card--first-author reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/UnimedVl_overview.png" alt="UniMedVL medical multimodal model" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>UniMedVL: Unifying Medical Multimodal Understanding and Generation with Unified Language Modeling</h3>
+
+                <p class="pub-authors">
+                  <strong>Junzhi Ning</strong>, Wei Li, Cheng Tang, Jiashi Lin, Chenglong Ma, Yingqiang Wang, Kairui Qi,
+                  Jianchun Zhao, Yuyao Shi, Jiachen Shen, Jiaqi Yao, Yao Rong, Yu Wang, Qingqing Zhu, Shuai Zheng,
+                  Haotian Liu, Shijie Zhao, Sirui Zhao, Tianfei Zhou, Sheng Jin, Wangmeng Zuo, Yefeng Zheng,
+                  Chen Gong, Yonghong He, Qixiang Ye, Xiaojuan Qi, Jie Chen
+                </p>
+
+                <p class="pub-meta">arXiv 2025 · First author · Under Review</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Medical diagnostic applications require models that can process multimodal inputs (images, patient histories,
+                    lab results) and generate both structured predictions and natural language explanations. We present UniMedVL,
+                    a unified medical vision-language model that bridges understanding and generation through a novel language
+                    modeling paradigm. UniMedVL achieves state-of-the-art performance on multiple medical imaging tasks including
+                    visual question answering, report generation, and diagnostic prediction while maintaining strong zero-shot
+                    generalization capabilities.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://arxiv.org/abs/2510.15710" target="_blank" rel="noreferrer">arXiv</a>
+                  ·
+                  <a href="https://github.com/uni-medical/UniMedVL" target="_blank" rel="noreferrer">Code</a>
+                  ·
+                  <a href="https://uni-medical.github.io/UniMedVL_Web/" target="_blank" rel="noreferrer">Website</a>
+                  ·
+                  <a href="https://huggingface.co/General-Medical-AI/UniMedVL" target="_blank" rel="noreferrer">Hugging Face</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- RetinaLogos -->
+            <figure class="media-card media-card--first-author reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/retina_logos.png" alt="RetinaLogos retinal image synthesis" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>RetinaLogos: Fine-Grained Synthesis of High-Resolution Retinal Images Through Captions</h3>
+
+                <p class="pub-authors">
+                  <strong>Junzhi Ning</strong>, Zhuowei Deng, Tianfei Zhou, Hao Guan, Yingqiang Wang, Tianyuan Yao, Zhe Tang,
+                  Wangmeng Zuo, Yonghong He, Qixiang Ye, Xiaojuan Qi
+                </p>
+
+                <p class="pub-meta">MICCAI 2025 · First author</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Large-scale text-to-image synthesis for retinal imaging enables unprecedented control over fine-grained
+                    anatomical features. We introduce RetinaLogos, a framework that combines latent diffusion models with
+                    the RetinaLogos-1400k dataset containing 1.4M retinal images with detailed textual descriptions. Our
+                    approach achieves superior quality in generating photorealistic retinal fundus images with precise
+                    control over pathological features, vessel structures, and optic disc characteristics, enabling robust
+                    data augmentation for downstream diagnostic tasks.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://papers.miccai.org/miccai-2025/paper/0673_paper.pdf" target="_blank" rel="noreferrer">Paper</a>
+                  ·
+                  <a href="https://github.com/uni-medical/retina-text2cfp" target="_blank" rel="noreferrer">Code</a>
+                  ·
+                  <a href="https://www.bilibili.com/video/BV1HjKoz8EAE" target="_blank" rel="noreferrer">Video</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- Unpaired CXR Translation -->
+            <figure class="media-card media-card--first-author reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/cxr_lung_opacity.png" alt="Chest X-ray opacity removal" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>Unpaired Translation of Chest X-Ray Images for Lung Opacity Diagnosis</h3>
+
+                <p class="pub-authors">
+                  <strong>Junzhi Ning</strong>, Yuxin Huang, Jiashi Lin, Mingjun Chen, Qingqing Zhu, Yu Wang, Kairui Qi,
+                  Hongxia Xu, Qixiang Ye, Qi Dou, Xiaojuan Qi
+                </p>
+
+                <p class="pub-meta">Pattern Recognition Letters 2025 · First author</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Lung opacity in chest X-rays often obscures diagnostic features, complicating disease assessment. We propose
+                    an unpaired image-to-image translation framework that removes opacity artifacts while preserving critical
+                    diagnostic content. Our method employs adaptive activation masks and cross-domain consistency constraints to
+                    learn robust mappings between normal and opacity-affected images without requiring paired training data.
+                    The approach demonstrates significant improvements in downstream segmentation accuracy and diagnostic
+                    confidence across multiple lung disease datasets.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0167865525001254" target="_blank" rel="noreferrer">Paper</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- Latent Diffusion CXR -->
+            <figure class="media-card media-card--first-author reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/latent_diffusion_cxr.png" alt="Latent diffusion for CXR classification" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>Unveiling the Capabilities of Latent Diffusion Models for Classification of Lung Diseases in Chest X-Rays</h3>
+
+                <p class="pub-authors">
+                  <strong>Junzhi Ning</strong>, Tianfei Zhou, Jiashi Lin, Qingqing Zhu, Yu Wang, Kairui Qi, Hongxia Xu,
+                  Qixiang Ye, Qi Dou, Xiaojuan Qi
+                </p>
+
+                <p class="pub-meta">ISBI 2025 · First author</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Latent diffusion models have shown remarkable performance in image generation, but their potential for
+                    medical image classification remains underexplored. We investigate how conditional latent diffusion models
+                    can be adapted for zero-shot lung disease classification in chest X-rays. Our analysis reveals that the
+                    intermediate latent representations learned during the denoising process encode rich diagnostic information,
+                    producing interpretable lesion localizations that align with radiological findings without explicit
+                    supervision for classification tasks.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://ieeexplore.ieee.org/document/10981008" target="_blank" rel="noreferrer">Paper</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- DGM Vision-Language Conditioning -->
+            <figure class="media-card media-card--first-author reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/mask2ct.png" alt="Deep Generative Models for medical imaging" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>Deep Generative Models Unveil Patterns in Medical Images Through Vision-Language Conditioning</h3>
+
+                <p class="pub-authors">
+                  <strong>Junzhi Ning*</strong>, Xiaodan Xing*, Yang Nan, Guang Yang
+                  <br>
+                  <span style="font-size: 0.85em; opacity: 0.85;">* Equal contribution</span>
+                </p>
+
+                <p class="pub-meta">NeurIPS Workshop 2024 · Co-first author</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Deep generative models have revolutionized medical image analysis, but their ability to unveil underlying
+                    patterns through vision-language conditioning remains underexplored. We present a novel framework that leverages
+                    vision-language conditioning to guide deep generative models in discovering and visualizing subtle patterns in
+                    medical images. By conditioning on natural language descriptions of anatomical structures and pathological features,
+                    our approach enables interpretable pattern discovery across diverse medical imaging modalities. The framework
+                    demonstrates strong performance in revealing clinically meaningful patterns that align with radiological expertise
+                    while maintaining generative quality.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://arxiv.org/abs/2410.13823" target="_blank" rel="noreferrer">arXiv</a>
+                  ·
+                  <a href="https://github.com/junzhin/DGM-VLC" target="_blank" rel="noreferrer">Code</a>
+                  ·
+                  <a href="https://nips.cc/virtual/2024/109306" target="_blank" rel="noreferrer">Video</a>
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Group 2: Key Collaborations - Highlighted -->
+          <h3 class="pub-group-title">Key Collaborations &ndash; Highlighted</h3>
+          <div class="media-grid">
+            <!-- GMAI-VL-R1 -->
+            <figure class="media-card reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/GMAI_R1.png" alt="GMAI-VL-R1 medical vision-language model" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>GMAI-VL-R1: Harnessing Reinforcement Learning for Multimodal Medical Reasoning</h3>
+
+                <p class="pub-authors">
+                  Yanzhou Su, Tianbin Li, Jiyao Liu, Chenglong Ma, <strong>Junzhi Ning</strong>, Cheng Tang, Sibo Ju, Jin Ye,
+                  Pengcheng Chen, Ming Hu, Shixiang Tang, Lihao Liu, Bin Fu, Wenqi Shao, Xiaowei Hu, Xiangwen Liao,
+                  Yuanfeng Ji, Junjun He
+                </p>
+
+                <p class="pub-meta">arXiv 2025 · Key Collaboration · Under Review</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Recent advances in general medical AI have made significant strides, but existing models often lack the
+                    reasoning capabilities needed for complex medical decision-making. This paper presents GMAI-VL-R1, a
+                    multimodal medical reasoning model enhanced by reinforcement learning (RL) to improve its reasoning abilities.
+                    Through iterative training, GMAI-VL-R1 optimizes decision-making, significantly boosting diagnostic accuracy
+                    and clinical support. We also develop a reasoning data synthesis method, generating step-by-step reasoning
+                    data via rejection sampling, which further enhances the model's generalization. Experimental results show
+                    that after RL training, GMAI-VL-R1 excels in tasks such as medical image diagnosis and visual question
+                    answering.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://arxiv.org/abs/2504.01886" target="_blank" rel="noreferrer">arXiv</a>
+                  ·
+                  <a href="https://huggingface.co/papers/2504.01886" target="_blank" rel="noreferrer">Hugging Face</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- Ophora -->
+            <figure class="media-card reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/surgical_ophora.png" alt="Ophora ophthalmology multimodal model" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>Ophora: A Large-Scale Data-Driven Text-Guided Ophthalmic Surgical Video Generation Model</h3>
+
+                <p class="pub-authors">
+                  Wei Li, Ming Hu, Guoan Wang, Lihao Liu, Kaijin Zhou, <strong>Junzhi Ning</strong>, Xin Guo,
+                  Zongyuan Ge, Lixu Gu, Junjun He
+                </p>
+
+                <p class="pub-meta">MICCAI 2025 · Oral Presentation · Key Collaboration</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    In ophthalmic surgery, developing an AI system capable of interpreting surgical videos and predicting
+                    subsequent operations requires numerous ophthalmic surgical videos with high-quality annotations, which are
+                    difficult to collect due to privacy concerns and labor consumption. Text-guided video generation (T2V) emerges
+                    as a promising solution to overcome this issue by generating ophthalmic surgical videos based on surgeon
+                    instructions. In this paper, we present Ophora, a pioneering model that can generate ophthalmic surgical videos
+                    following natural language instructions. We first propose a Comprehensive Data Curation pipeline to convert
+                    narrative ophthalmic surgical videos into a large-scale, high-quality dataset comprising over 160K
+                    video-instruction pairs, Ophora-160K.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://papers.miccai.org/miccai-2025/paper/1768_paper.pdf" target="_blank" rel="noreferrer">Paper</a>
+                  ·
+                  <a href="https://github.com/uni-medical/Ophora" target="_blank" rel="noreferrer">Code</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- MedGround-R1 -->
+            <figure class="media-card reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/spatial_reward_r1_cxr.png" alt="MedGround-R1 medical grounding model" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>MedGround-R1: Advancing Medical Image Grounding via Spatial-Semantic Rewarded Group Relative Policy Optimization</h3>
+
+                <p class="pub-authors">
+                  Huihui Xu, Yuanpeng Nie, Hualiang Wang, Ying Chen, Wei Li, <strong>Junzhi Ning</strong>, Lihao Liu,
+                  Hongqiu Wang, Lei Zhu, Jiyao Liu, Xiaomeng Li, Junjun He
+                </p>
+
+                <p class="pub-meta">MICCAI 2025 · Spotlight · Key Collaboration</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Medical Image Grounding (MIG), which involves localizing specific regions in medical images based on textual
+                    descriptions, requires models to not only perceive regions but also deduce spatial relationships of these
+                    regions. Existing Vision-Language Models (VLMs) for MIG often rely on Supervised Fine-Tuning (SFT) with large
+                    amounts of Chain-of-Thought (CoT) reasoning annotations, which are expensive and time-consuming to acquire.
+                    Recently, DeepSeek-R1 demonstrated that Large Language Models (LLMs) can acquire reasoning abilities through
+                    Group Relative Policy Optimization (GRPO) without requiring CoT annotations. In this paper, we adapt the GRPO
+                    reinforcement learning framework to VLMs for Medical Image Grounding. We propose the Spatial-Semantic Rewarded
+                    Group Relative Policy Optimization to train the model without CoT reasoning annotations.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://papers.miccai.org/miccai-2025/paper/1222_paper.pdf" target="_blank" rel="noreferrer">Paper</a>
+                  ·
+                  <a href="https://github.com/bio-mlhui/MedGround-R1" target="_blank" rel="noreferrer">Code</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- Multi-modal MRI Translation -->
+            <figure class="media-card reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/multi-model_mri.png" alt="Multi-modal MRI translation" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>Multi-modal MRI Translation via Evidential Regression and Distribution Calibration</h3>
+
+                <p class="pub-authors">
+                  Jiyao Liu, Shangqi Gao, Yuxin Li, Lihao Liu, Xin Gao, Zhaohu Xing, <strong>Junzhi Ning</strong>,
+                  Yanzhou Su, Xiao-Yong Zhang, Junjun He, Ningsheng Xu, Xiahai Zhuang
+                </p>
+
+                <p class="pub-meta">MICCAI 2025 · Key Collaboration</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Multi-modal Magnetic Resonance Imaging (MRI) translation leverages information from source MRI sequences to
+                    generate target modalities, enabling comprehensive diagnosis while overcoming the limitations of acquiring all
+                    sequences. While existing deep-learning-based multi-modal MRI translation methods have shown promising potential,
+                    they still face two key challenges: 1) lack of reliable uncertainty quantification for synthesized images, and
+                    2) limited robustness when deployed across different medical centers. To address these challenges, we propose a
+                    novel framework that reformulates multi-modal MRI translation as a multi-modal evidential regression problem
+                    with distribution calibration. Extensive experiments on three datasets from the BraTS2023 challenge demonstrate
+                    that our framework achieves superior performance and robustness across domains.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <span style="color: var(--color-text-secondary);">Paper Coming Soon</span>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- DMRN -->
+            <figure class="media-card reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/DMRN.png" alt="DMRN airway segmentation" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>DMRN: A Dynamical Multi-Order Response Network for the Robust Lung Airway Segmentation</h3>
+
+                <p class="pub-authors">
+                  Zhe Zhang, Tianyi Zhang, Xinyuan Zhang, <strong>Junzhi Ning</strong>, Chaowei Fang, Guanzhong Gong,
+                  Yong Liang, Xun Cao
+                </p>
+
+                <p class="pub-meta">WACV 2025 · Key Collaboration</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Robust airway segmentation from CT scans is challenging due to varying tree topology and imaging artifacts.
+                    DMRN introduces a dynamical multi-order response architecture that combines supervised segmentation with
+                    unsupervised structure learning. The network adaptively adjusts its receptive fields to capture both fine-grained
+                    bronchiolar details and large-scale airway topology, achieving state-of-the-art segmentation performance
+                    across diverse lung disease datasets including COPD, COVID-19, and lung cancer cohorts.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Zhang_DMRN_A_Dynamical_Multi-Order_Response_Network_for_the_Robust_Lung_WACV_2025_paper.pdf" target="_blank" rel="noreferrer">Paper</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- Cyclic Vision-Language Manipulator -->
+            <figure class="media-card reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/Cyclic_Vision_LanguageManipulator.png" alt="Cyclic Vision-Language Manipulator" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>Cyclic Vision-Language Manipulator for Reliable Image Interpretation</h3>
+
+                <p class="pub-authors">
+                  Xinyuan Zhang, Zhe Zhang, <strong>Junzhi Ning</strong>, Chaowei Fang, Lichi Zhang, Guanzhong Gong
+                </p>
+
+                <p class="pub-meta">IJCAI 2025 · Key Collaboration</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Automated medical report generation must produce reliable and interpretable outputs. We propose a cyclic
+                    manipulation framework that establishes bidirectional consistency between image features and textual reports.
+                    The model learns to manipulate visual representations in response to report modifications and vice versa,
+                    ensuring that changes in one modality produce expected changes in the other. This cyclic constraint improves
+                    both the factual accuracy and clinical reliability of generated reports while providing interpretable
+                    attention maps for key diagnostic findings.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://api.semanticscholar.org/CorpusID:273950041" target="_blank" rel="noreferrer">Paper</a>
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Group 3: Other Contributions -->
+          <h3 class="pub-group-title">Other Contributions</h3>
+          <div class="media-grid">
+            <!-- Intern-S1 -->
+            <figure class="media-card reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/text_lan_fusion.png" alt="Intern-S1 Scientific Foundation Model" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>Intern-S1: A Scientific Multimodal Foundation Model</h3>
+
+                <p class="pub-authors">
+                  Wangchunshu Zhou, Xiaoxuan Lin, Jiaheng Liu, Xibing Tian, Shujie Hu, <strong>Junzhi Ning</strong>,
+                  <em>et al.</em> (100+ authors)
+                </p>
+
+                <p class="pub-meta">Technical Report · arXiv 2025</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    Scientific discovery requires integrating knowledge across diverse domains and modalities. Intern-S1 is a
+                    large-scale mixture-of-experts foundation model with 241B parameters, trained on scientific literature,
+                    molecular structures, experimental data, and research code. The model achieves state-of-the-art performance
+                    on molecular property prediction, crystal stability forecasting, retrosynthesis planning, and scientific
+                    question answering, demonstrating strong zero-shot transfer across chemistry, materials science, and biology.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://arxiv.org/abs/2508.15763" target="_blank" rel="noreferrer">arXiv</a>
+                </p>
+              </figcaption>
+            </figure>
+
+            <!-- Scientific LLM Survey -->
+            <figure class="media-card reveal">
+              <div class="media-card__image">
+                <img src="assets/img/publication_preview/scientific_llm_survey.png" alt="Scientific LLM Survey" />
+              </div>
+              <figcaption class="media-card__caption">
+                <h3>Survey: Scientific Large Language Models from Data to Agents</h3>
+
+                <p class="pub-authors">
+                  Wangchunshu Zhou, Xiaoxuan Lin, <strong>Junzhi Ning</strong>, <em>et al.</em> (20+ authors)
+                </p>
+
+                <p class="pub-meta">Survey · arXiv 2025</p>
+
+                <div class="pub-abstract">
+                  <p class="pub-abstract__text">
+                    The rapid development of large language models has opened new possibilities for scientific research automation.
+                    This comprehensive survey examines scientific LLMs across the full pipeline from data curation to autonomous
+                    agents. We analyze 270+ specialized scientific datasets, 190+ domain-specific benchmarks, and emerging
+                    architectures for scientific reasoning. The survey covers applications in physics, chemistry, biology, medicine,
+                    and materials science, identifying key challenges including hallucination in scientific contexts, integration
+                    of structured scientific knowledge, and ethical considerations for AI-assisted research.
+                  </p>
+                  <button class="pub-abstract__toggle" aria-label="Toggle abstract">
+                    <span class="toggle-more">Read more</span>
+                    <span class="toggle-less">Show less</span>
+                  </button>
+                </div>
+
+                <p class="pub-links">
+                  <a href="https://arxiv.org/abs/2508.21148" target="_blank" rel="noreferrer">arXiv</a>
+                </p>
+              </figcaption>
+            </figure>
+
+          </div>
+
+          <p class="section__subtitle" style="max-width: 1120px; margin: 18px auto 0; padding: 0 20px; font-size: 0.85rem;">
+            For a complete and up-to-date list of publications, please see my
+            <a
+              href="https://www.semanticscholar.org/author/Junzhi-Ning/2353285720"
+              target="_blank"
+              rel="noreferrer"
+              style="font-weight: 600; text-decoration: underline; color: var(--accent-color);"
+            >
+              Semantic Scholar profile
+            </a>
+            or
+            <a
+              href="https://openreview.net/profile?id=%7EJunzhi_Ning1"
+              target="_blank"
+              rel="noreferrer"
+              style="font-weight: 600; text-decoration: underline; color: var(--accent-color);"
+            >
+              OpenReview
+            </a>.
+          </p>
+        </section>
+
+        <!-- Skills & Expertise -->
+        <section id="skills" class="section section--padded">
+          <div class="section__label">Expertise</div>
+          <div class="section__header">
+            <h2 class="section__title">Skills & Expertise</h2>
+            <p class="section__subtitle">
+              Core competencies in medical AI, generative models, and multimodal learning.
+            </p>
+          </div>
+
+          <div class="grid grid--3col">
+            <!-- Research Areas -->
+            <article class="card reveal">
+              <div class="card__icon card__icon--accent-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <h3 class="card__title">Research Areas</h3>
+              <ul class="card__list">
+                <li>Medical Imaging & AI for Healthcare</li>
+                <li>Generative Models & Diffusion Models</li>
+                <li>Multimodal Vision-Language Models</li>
+                <li>Medical Image Translation & Synthesis</li>
+                <li>Data-Centric AI & Synthetic Data Generation</li>
+              </ul>
+            </article>
+
+            <!-- Technical Skills -->
+            <article class="card reveal">
+              <div class="card__icon card__icon--accent-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="card__title">Technical Skills</h3>
+              <ul class="card__list">
+                <li>Deep Learning: PyTorch, TensorFlow</li>
+                <li>Medical Imaging: Chest X-ray, Retinal, MRI</li>
+                <li>Computer Vision: Segmentation, Classification</li>
+                <li>Generative AI: Latent Diffusion, GANs, T2I</li>
+                <li>Scientific Computing: Python, NumPy, Pandas</li>
+              </ul>
+            </article>
+
+            <!-- Tools & Platforms -->
+            <article class="card reveal">
+              <div class="card__icon card__icon--accent-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="card__title">Tools & Platforms</h3>
+              <ul class="card__list">
+                <li>High-Performance Computing (HPC)</li>
+                <li>Large-scale Data Generation Pipelines</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Experiment Tracking: Weights & Biases</li>
+                <li>Cloud Platforms: SLURM, Docker</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Awards & Honors -->
+        <section id="awards" class="section section--padded">
+          <div class="section__label">Recognition</div>
+          <div class="section__header">
+            <h2 class="section__title">Awards & Honors</h2>
+            <p class="section__subtitle">
+              Academic achievements and recognitions throughout my research journey.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">Oct 2024</span>
+                  <span class="timeline-item__tag timeline-item__tag--highlight">Academic Excellence</span>
+                </div>
+                <h3 class="timeline-item__title">Top 5 Master Research Project, Imperial College London</h3>
+                <p class="timeline-item__body">
+                  Ranked in the top 5 among the entire MRes in AI and Machine Learning cohort at Imperial College London
+                  for outstanding research on deep generative models for medical imaging.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">Aug 2023</span>
+                  <span class="timeline-item__tag timeline-item__tag--highlight">Highest Honor</span>
+                </div>
+                <h3 class="timeline-item__title">University Medal, University of Sydney</h3>
+                <p class="timeline-item__body">
+                  Awarded University Medal in Bachelor of Science (Honours) for achieving the highest academic
+                  distinction (WAM 89.5) in Data Science Honours program. The honour thesis on night-to-day image
+                  translation was subsequently accepted at the Australasian Database Conference.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">2025</span>
+                  <span class="timeline-item__tag">Conference Recognition</span>
+                </div>
+                <h3 class="timeline-item__title">Oral Presentations at Top-Tier Conferences</h3>
+                <p class="timeline-item__body">
+                  Selected for oral presentations at prestigious conferences: MICCAI 2025 (Ophora - Ophthalmic Surgical
+                  Video Generation) and NeurIPS 2024 Workshop on Advancements in Medical Foundation Models (Deep Generative
+                  Models for Medical Imaging).
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">2022</span>
+                  <span class="timeline-item__tag">Scholarship</span>
+                </div>
+                <h3 class="timeline-item__title">Melbourne International Undergraduate Scholarship</h3>
+                <p class="timeline-item__body">
+                  Received merit-based scholarship from University of Melbourne in recognition of academic excellence
+                  in Mathematics and Statistics (Overall WAM: 86.8/First Class Honours).
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">2019</span>
+                  <span class="timeline-item__tag">Academic Recognition</span>
+                </div>
+                <h3 class="timeline-item__title">Dean's Honours List, University of Melbourne</h3>
+                <p class="timeline-item__body">
+                  Placed on Dean's Honours List for First Year Bachelor of Science students for exceptional academic
+                  performance among the entire cohort.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- News / timeline -->
+        <section id="news" class="section section--padded">
+          <div class="section__label">News</div>
+          <div class="section__header">
+            <h2 class="section__title">Recent milestones</h2>
+            <p class="section__subtitle">
+              A lightweight lab notebook – recent papers, positions, and project updates.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">Oct 2025</span>
+                  <span class="timeline-item__tag timeline-item__tag--highlight">Preprint</span>
+                </div>
+                <h3 class="timeline-item__title">UniMedVL arXiv preprint released</h3>
+                <p class="timeline-item__body">
+                  New preprint on arXiv: UniMedVL, a unified multimodal framework for medical image understanding and
+                  generation built around the Observation–Knowledge–Analysis paradigm.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">Jun 2025</span>
+                  <span class="timeline-item__tag timeline-item__tag--highlight">MICCAI 2025</span>
+                </div>
+                <h3 class="timeline-item__title">4 papers accepted at MICCAI 2025</h3>
+                <p class="timeline-item__body">
+                  4 papers accepted at MICCAI 2025, including 1 first-author paper (RetinaLogos),
+                  1 oral presentation (Ophora), and 1 spotlight (MedGround-R1), advancing generative
+                  and multimodal medical AI.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">Apr 2025</span>
+                  <span class="timeline-item__tag">IJCAI 2025</span>
+                </div>
+                <h3 class="timeline-item__title">Cyclic Vision-Language Manipulator accepted at IJCAI 2025</h3>
+                <p class="timeline-item__body">
+                  CVLM paper on reliable and fine-grained image interpretation for automated report generation accepted at IJCAI 2025.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">Mar 2025</span>
+                  <span class="timeline-item__tag">Pattern Recognition Letters</span>
+                </div>
+                <h3 class="timeline-item__title">First-author PRL paper on unpaired CXR translation</h3>
+                <p class="timeline-item__body">
+                  Unpaired chest X-ray translation method for lung opacity diagnosis accepted in Pattern Recognition Letters,
+                  improving segmentation and classification across multiple datasets.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">Nov 2024</span>
+                  <span class="timeline-item__tag">Position</span>
+                </div>
+                <h3 class="timeline-item__title">Joined Shanghai AI Lab</h3>
+                <p class="timeline-item__body">
+                  Started as Machine Learning Researcher at Shanghai AI Lab in the GMAI group,
+                  focusing on multimodal medical AI models and large-scale synthetic dataset generation
+                  for healthcare applications.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-item__marker"></div>
+              <div class="timeline-item__content">
+                <div class="timeline-item__meta">
+                  <span class="timeline-item__date">Oct 2024</span>
+                  <span class="timeline-item__tag">Graduation</span>
+                </div>
+                <h3 class="timeline-item__title">MRes in Machine Learning, Imperial College London</h3>
+                <p class="timeline-item__body">
+                  Completed MRes (Distinction), supervised by <a href="https://scholar.google.com/citations?user=xpAYtroAAAAJ" target="_blank" rel="noreferrer">Dr. Matthieu Komorowski</a> and <a href="https://scholar.google.com/citations?user=ZfzEFpsAAAAJ" target="_blank" rel="noreferrer">Dr. Guang Yang</a>,
+                  working on deep generative models for chest X-ray image translation in collaboration with ICU clinicians.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Blog preview -->
+        <!-- Academic affiliations -->
+        <section id="affiliations" class="section section--padded section--affiliations">
+          <div class="section__label">Academic path</div>
+          <div class="section__header">
+            <h2 class="section__title">Affiliations & training</h2>
+            <p class="section__subtitle">
+              From Melbourne to Sydney to London to Shanghai – a journey through data science, mathematics, and medical AI.
+            </p>
+          </div>
+
+          <div class="affiliations-grid">
+            <a
+              href="https://www.sydney.edu.au/"
+              target="_blank"
+              rel="noreferrer"
+              class="affiliation-card reveal"
+            >
+              <img src="assets/img/usyd_logo.svg" alt="University of Sydney" />
+            </a>
+            <a
+              href="https://www.unimelb.edu.au/"
+              target="_blank"
+              rel="noreferrer"
+              class="affiliation-card reveal"
+            >
+              <img src="assets/img/unimelb_logo.svg" alt="University of Melbourne" />
+            </a>
+            <a
+              href="https://www.imperial.ac.uk/"
+              target="_blank"
+              rel="noreferrer"
+              class="affiliation-card reveal"
+            >
+              <img src="assets/img/imperial_logo.png" alt="Imperial College London" />
+            </a>
+            <a
+              href="https://www.shlab.org.cn/"
+              target="_blank"
+              rel="noreferrer"
+              class="affiliation-card reveal"
+            >
+              <img src="assets/img/shanghai_ailab_logo.png" alt="Shanghai AI Lab" />
+            </a>
+          </div>
+        </section>
+
+        <!-- Reviewer Service -->
+        <section id="reviewer-service" class="section section--padded reveal">
+          <div class="section__label">Academic Service</div>
+          <div class="section__header">
+            <h2 class="section__title">📝 Reviewer Service</h2>
+          </div>
+
+          <div class="reviewer-service-content">
+            <div class="reviewer-category">
+              <h3 class="reviewer-category__title">Reviewer - Journals</h3>
+              <p class="reviewer-list">
+                Nature Medicine, nBME, Scientific Reports, Communications Medicine, Medical Physics, EJNMMI Physics, JBI, TIP
+              </p>
+            </div>
+
+            <div class="reviewer-category">
+              <h3 class="reviewer-category__title">Reviewer - Conferences</h3>
+              <p class="reviewer-list">
+                ICML, ICLR, NeurIPS, ICIP
+              </p>
+            </div>
+
+            <div class="reviewer-category">
+              <h3 class="reviewer-category__title">Moderator</h3>
+              <p class="reviewer-list">
+                AI-Medical Imaging session in LARS2020
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Acknowledgments -->
+        <section id="acknowledgments" class="section section--padded section--acknowledgments">
+          <div class="section__label">Gratitude</div>
+          <div class="section__header">
+            <h2 class="section__title">🙏 Acknowledgments</h2>
+          </div>
+
+          <div class="acknowledgments-content">
+            <p>
+              I am deeply grateful to my supervisors <strong><a href="https://scholar.google.com/citations?user=Z4LgebkAAAAJ" target="_blank" rel="noreferrer">Dr. Junjun He</a></strong>, <strong><a href="https://scholar.google.com/citations?user=ZfzEFpsAAAAJ" target="_blank" rel="noreferrer">Dr. Guang Yang</a></strong>,
+              <strong><a href="https://scholar.google.com/citations?user=xpAYtroAAAAJ" target="_blank" rel="noreferrer">Dr. Matthieu Komorowski</a></strong>, and <strong><a href="https://openreview.net/profile?id=%7EMingming_Gong2" target="_blank" rel="noreferrer">Prof. Minming Gong</a></strong> for their invaluable
+              guidance, mentorship, and support throughout my research journey. Their insights and encouragement have
+              been instrumental in shaping my academic growth.
+            </p>
+            <p>
+              I also extend my sincere thanks to my collaborators <strong><a href="https://openreview.net/profile?id=~Lihao_Liu1" target="_blank" rel="noreferrer">Lihao Liu</a></strong>, <strong><a href="https://openreview.net/profile?id=~Sheng_Zhang5" target="_blank" rel="noreferrer">Sheng Zhang</a></strong>,
+              <strong><a href="https://scholar.google.com/citations?user=dUFYArYAAAAJ" target="_blank" rel="noreferrer">Xiaodan Xing</a></strong>, <strong><a href="https://scholar.google.com/citations?user=StqmF6oAAAAJ" target="_blank" rel="noreferrer">Yingying Fang</a></strong>, <strong><a href="https://chengtang-ai.github.io" target="_blank" rel="noreferrer">Cheng Tang</a></strong>,
+              <strong><a href="https://scholar.google.com/citations?user=TGIvczYAAAAJ" target="_blank" rel="noreferrer">Wei Li</a></strong>, <strong><a href="https://liujiyaofdu.github.io" target="_blank" rel="noreferrer">Jiyao Liu</a></strong>, <strong><a href="https://scholar.google.com/citations?user=2dM6prwAAAAJ" target="_blank" rel="noreferrer">Huihui Xu</a></strong>, and many others.
+              Their expertise, dedication, and teamwork have been essential to our research achievements.
+            </p>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section--padded section--contact">
+          <div class="section__label">Contact</div>
+          <div class="section__header">
+            <h2 class="section__title">Say hello</h2>
+            <p class="section__subtitle">
+              I am always happy to chat about generative models, multimodal systems, and new collaborations in medical AI.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-panel reveal">
+              <h3>Collaborations & PhD opportunities</h3>
+              <p>
+                If you are working on <strong>generative medical AI</strong>, <strong>multimodal learning</strong>,
+                or <strong>data-centric healthcare</strong>, I would love to connect.
+              </p>
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-list__label">Email</span>
+                  <a href="mailto:ningjunzhi85@gmail.com">ningjunzhi85@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contact-list__label">GitHub</span>
+                  <a href="https://github.com/junzhin" target="_blank" rel="noreferrer">github.com/junzhin</a>
+                </li>
+                <li>
+                  <span class="contact-list__label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/junzhin" target="_blank" rel="noreferrer">
+                    linkedin.com/in/junzhin
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-panel contact-panel--accent reveal">
+              <h3>Quick profile</h3>
+              <ul class="contact-list contact-list--compact">
+                <li>
+                  <span class="contact-list__label">Current</span>
+                  Machine Learning Researcher, Shanghai AI Lab (GMAI)
+                </li>
+                <li>
+                  <span class="contact-list__label">MRes</span>
+                  Machine Learning, Imperial College London (Distinction)
+                </li>
+                <li>
+                  <span class="contact-list__label">BSc (Hons)</span>
+                  Data Science, University of Sydney (University Medal)
+                </li>
+                <li>
+                  <span class="contact-list__label">Interests</span>
+                  Generative models · Medical imaging · Multimodal reasoning
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <p>
+            © <span id="year"></span> Junzhi (Raymond) Ning. Built as a lightweight, animated research blog.
+          </p>
+          <p>
+            Deployed via GitHub Pages.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>
