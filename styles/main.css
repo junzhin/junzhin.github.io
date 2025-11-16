@@ -1,18 +1,18 @@
 /* Root variables and global reset */
 :root {
-  --color-bg: #050816;
+  --color-bg: #0a0e27;
   --color-surface: rgba(7, 10, 34, 0.95);
   --color-surface-alt: rgba(9, 13, 46, 0.98);
   --color-border-subtle: rgba(255, 255, 255, 0.06);
 
-  --color-text: #e5ecff;
+  --color-text: #e8f0ff;
   --color-text-muted: #a3b3ff;
   --color-text-soft: #8f9bd6;
 
-  --color-accent-1: #ff6b6b;
-  --color-accent-2: #0ef2ff;
-  --color-accent-3: #ffdd57;
-  --color-accent-4: #f94dff;
+  --color-accent-1: #00d4aa;
+  --color-accent-2: #6a8aff;
+  --color-accent-3: #ffa94d;
+  --color-accent-4: #bf7af0;
 
   --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
   --shadow-chip: 0 8px 25px rgba(0, 0, 0, 0.45);
