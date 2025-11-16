@@ -3,5 +3,8 @@ title: Reviewer Service
 order: 5
 ---
 
-**Conferences:** ICLR, CVPR, ISBI
-**Journals:** TMI
+**Reviewer - Journals:** Nature Medicine, nBME, Scientific Reports, Communications Medicine, Medical Physics, EJNMMI Physics, JBI, TIP
+
+**Reviewer - Conferences:** ICML, ICLR, NeurIPS, ICIP
+
+**Moderator:** AI-Medical Imaging session in LARS2020
