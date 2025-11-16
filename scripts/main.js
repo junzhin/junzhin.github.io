@@ -190,6 +190,49 @@ function setupNavHighlight() {
   });
 }
 
+function setupNewsToggle() {
+  const newsSection = document.querySelector("#news");
+  if (!newsSection) return;
+
+  const newsItems = newsSection.querySelectorAll(".timeline-item");
+  const toggleBtn = newsSection.querySelector(".news-toggle-btn");
+  const toggleMoreText = toggleBtn?.querySelector(".toggle-more-news");
+  const toggleLessText = toggleBtn?.querySelector(".toggle-less-news");
+
+  if (!toggleBtn || newsItems.length <= 6) return;
+
+  // Show the toggle button if there are more than 6 items
+  toggleBtn.style.display = "inline-flex";
+
+  // Initially hide items after the 6th one
+  newsItems.forEach((item, index) => {
+    if (index >= 6) {
+      item.classList.add("is-collapsed");
+      item.style.display = "none";
+    }
+  });
+
+  // Set initial button state
+  toggleBtn.classList.remove("is-expanded");
+
+  // Toggle functionality
+  toggleBtn.addEventListener("click", () => {
+    const isExpanded = toggleBtn.classList.toggle("is-expanded");
+
+    newsItems.forEach((item, index) => {
+      if (index >= 6) {
+        if (isExpanded) {
+          item.style.display = "";
+          item.classList.remove("is-collapsed");
+        } else {
+          item.style.display = "none";
+          item.classList.add("is-collapsed");
+        }
+      }
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupNavToggle();
   setupSmoothScroll();
@@ -197,4 +240,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setupYear();
   setupAbstractToggles();
   setupNavHighlight();
+  setupNewsToggle();
 });

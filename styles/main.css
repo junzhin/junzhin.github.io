@@ -1466,3 +1466,25 @@ main {
     margin-bottom: 1.5rem;
   }
 }
+
+/* ═══════════════════════════════════════════════
+   News Toggle Button Styles
+   ═══════════════════════════════════════════════ */
+
+.news-toggle-btn {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.news-toggle-btn .toggle-less-news {
+  display: none;
+}
+
+.news-toggle-btn.is-expanded .toggle-more-news {
+  display: none;
+}
+
+.news-toggle-btn.is-expanded .toggle-less-news {
+  display: inline;
+}
